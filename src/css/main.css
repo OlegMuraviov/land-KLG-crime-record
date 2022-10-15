@@ -199,7 +199,7 @@ header {
 
 .hero {
   display: block;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   width: 1560px;
 }
 
@@ -282,21 +282,24 @@ header {
   width: 390px;
   height: 186px;
   border-radius: 20px;
-  background-color: var(--brand-color);
+  background-color: #d0ae90;
 }
 .heroCardsItem:not(:last-child) {
   margin-right: 104px;
 }
 
 .heroCardImage-scales {
+  margin-right: 5px;
   width: 100px;
   height: 109px;
 }
 .heroCardImage-documents {
+  margin-right: 5px;
   width: 98px;
   height: 89px;
 }
 .heroCardImage-lawyers {
+  margin-right: 15px;
   width: 79px;
   height: 101px;
 }
@@ -323,6 +326,7 @@ header {
 }
 
 .extract {
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -361,4 +365,135 @@ header {
 }
 .extractText:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.cardsSection {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.cardsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1449px;
+}
+
+.cardsItem {
+  margin-bottom: 7px;
+  width: 485px;
+  height: 330px;
+  border: 3px solid #b68151;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cardsItem:nth-child(3n+2) {
+  width: 500px;
+}
+.cardsItem:nth-child(3n+3) {
+  width: 450px;
+}
+
+.cardsContent {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.cardsImage {
+  margin: 0 auto;
+}
+
+.cardIcon-guardianship {
+  margin-bottom: 20px;
+  width: 134px;
+  height: 133px;
+}
+.cardIcon-visa {
+  margin-bottom: 30px;
+  width: 159px;
+  height: 117px;
+}
+.cardIcon-translation {
+  margin-bottom: 20px;
+  width: 134px;
+  height: 126px;
+}
+.cardIcon-breafcase {
+  margin-bottom: 42px;
+  width: 133px;
+  height: 130px;
+}
+.cardIcon-weapon {
+  margin-bottom: 5px;
+  width: 144px;
+  height: 144px;
+}
+.cardIcon-paycard {
+  width: 128px;
+  height: 136px;
+}
+.cardIcon-passport {
+  margin-bottom: 35px;
+  width: 150px;
+  height: 162px;
+}
+.cardIcon-handsnake {
+  width: 153px;
+  height: 136px;
+}
+.cardIcon-capitoly {
+  margin-bottom: 25px;
+  width: 158px;
+  height: 163px;
+}
+
+.cardsText {
+  margin: 0 auto;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.cardsText-guardianship {
+  width: 386px;
+}
+.cardsText-visa {
+  width: 394px;
+}
+.cardsText-translation {
+  width: 397px;
+}
+.cardsText-breafcase {
+  width: 377px;
+}
+.cardsText-weapon {
+  width: 386px;
+}
+.cardsText-paycard {
+  width: 387px;
+}
+.cardsText-passport {
+  width: 386px;
+}
+.cardsText-handsnake {
+  width: 384px;
+}
+.cardsText-capitoly {
+  width: 386px;
 }/*# sourceMappingURL=main.css.map */
