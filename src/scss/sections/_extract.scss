@@ -1,0 +1,37 @@
+.extract {
+    text-align: center;
+}
+
+.sectionTitle {
+    margin-bottom: 65px;
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: var(--main-text-color);
+}
+
+.extractContent {
+    display: flex;
+    align-items: center;
+}
+
+.extractImage {
+    margin-right: 102px;
+    border: 19px solid #372306;
+}
+
+.extractDescription{
+    width: 753px;
+}
+
+.extractText {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    &:not(:last-child){
+        margin-bottom: 40px;
+    }
+}

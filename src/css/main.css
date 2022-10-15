@@ -320,4 +320,45 @@ header {
   font-size: 23px;
   line-height: 28px;
   color: var(--additional-text-color);
+}
+
+.extract {
+  text-align: center;
+}
+
+.sectionTitle {
+  margin-bottom: 65px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: var(--main-text-color);
+}
+
+.extractContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extractImage {
+  margin-right: 102px;
+  border: 19px solid #372306;
+}
+
+.extractDescription {
+  width: 753px;
+}
+
+.extractText {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.extractText:not(:last-child) {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
