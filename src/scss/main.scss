@@ -1,0 +1,8 @@
+@import "./utils/reset"; // RESET
+@import "./utils/fonts"; // FONTS
+@import './utils/variables'; //COLORS
+@import './utils/utils'; // CONTAINER
+
+@import './layout/header';
+@import './components/contacts';
+@import './layout/hero';

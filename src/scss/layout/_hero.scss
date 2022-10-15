@@ -1,0 +1,116 @@
+.hero {
+  display: block;
+  margin-bottom: 150px;
+  width: 1560px;
+}
+
+.heroMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 60px 32px 32px;
+  background-color: #fff;
+}
+
+.heroText {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--main-text-color);
+}
+
+.languageImage {
+  width: 55px;
+  height: 32px;
+}
+
+.heroContent {
+  position: relative;
+  display: block;
+  padding: 145px 66px;
+  width: 1560px;
+  height: 590px;
+  background-image: url(../images/hero-image.jpg);
+}
+
+.heroSlogan {
+  margin-bottom: 57px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--additional-text-color);
+}
+
+.heroButton {
+  padding: 24px 28px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: var(--main-text-color);
+  border-radius: 29px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.heroCardsList {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.heroCardsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  width: 390px;
+  height: 186px;
+  border-radius: 20px;
+  background-color: var(--brand-color);
+
+  &:not(:last-child) {
+    margin-right: 104px;
+  }
+}
+
+.heroCardImage {
+  &-scales {
+    width: 100px;
+    height: 109px;
+  }
+
+  &-documents {
+    width: 98px;
+    height: 89px;
+  }
+
+  &-lawyers {
+    width: 79px;
+    height: 101px;
+  }
+}
+
+.heroCardDescription {
+  text-align: center;
+}
+
+.heroCardTitle {
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--main-text-color);
+}
+
+.heroCardText {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: var(--additional-text-color);
+}

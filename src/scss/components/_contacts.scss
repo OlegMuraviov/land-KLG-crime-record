@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 680px;
+}
+
+.contactsImage{
+  margin: 0 auto;
+  margin-bottom: 9px;
+}
+
+.contactsText {
+  margin-bottom: 8px;
+  font-family: "Hubballi";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.contactsContent {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}

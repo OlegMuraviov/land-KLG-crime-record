@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url(../fonts/HelveticaNeueCyr-Medium.eot);
+  src: url(../fonts/HelveticaNeueCyr-Medium.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/HelveticaNeueCyr-Medium.woff2) format("woff2"),
+    url(../fonts/HelveticaNeueCyr-Medium.woff) format("woff"),
+    url(../fonts/HelveticaNeueCyr-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Light.eot);
+  src: url(../fonts/HelveticaNeue-Light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/HelveticaNeue-Light.woff2) format("woff2"),
+    url(../fonts/HelveticaNeue-Light.woff) format("woff"),
+    url(../fonts/HelveticaNeue-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeueRegular.eot);
+  src: url(../fonts/HelveticaNeueRegular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/HelveticaNeueRegular.woff2) format("woff2"),
+    url(../fonts/HelveticaNeueRegular.woff) format("woff"),
+    url(../fonts/HelveticaNeueRegular.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Bold.eot);
+  src: url(../fonts/HelveticaNeue-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/HelveticaNeue-Bold.woff2) format("woff2"),
+    url(../fonts/HelveticaNeue-Bold.woff) format("woff"),
+    url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hubballi";
+  src: url(../fonts/Hubballi-Regular.eot);
+  src: url(../fonts/Hubballi-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Hubballi-Regular.ttf) format("truetype"),
+    url(../fonts/Hubballi-Regular.woff) format("woff"),
+    url(../fonts/Hubballi-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

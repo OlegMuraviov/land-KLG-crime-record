@@ -1,0 +1,12 @@
+header {
+  padding-top: 20px;
+  background-color: var(--brand-color);
+}
+
+.contactsWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -50px;
+  margin-bottom: 24px;
+}
