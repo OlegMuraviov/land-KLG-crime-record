@@ -1,0 +1,56 @@
+.apostille {
+  padding-top: 70px;
+}
+
+.apostilleContent {
+  padding: 40px 30px;
+  border: 4px solid #000000;
+  box-shadow: 17px 19px 7px #b68151;
+}
+
+.apostilleSubTitle {
+  margin-bottom: 35px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.apostilleDescription {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.apostilleTextWrap {
+  margin-right: 25px;
+}
+
+.apostilleText {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: justify;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.apostileImage {
+  width: 464px;
+  height: 324px;
+}
+
+.apostilleSubText {
+    margin: 0 auto;
+  width: 1196px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #B68151;
+}

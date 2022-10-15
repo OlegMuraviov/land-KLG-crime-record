@@ -1,6 +1,6 @@
 .extract {
     padding-top: 50px;
-    text-align: center;
+    
 }
 
 .sectionTitle {
@@ -10,6 +10,7 @@
     font-size: 35px;
     line-height: 43px;
     color: var(--main-text-color);
+    text-align: center;
 }
 
 .extractContent {
@@ -24,6 +25,7 @@
 
 .extractDescription{
     width: 753px;
+    text-align: center;
 }
 
 .extractText {
