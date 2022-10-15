@@ -514,4 +514,25 @@ header {
 
 .footnote__text:not(:last-child) {
   margin-bottom: 50px;
+}
+
+.crmWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  width: 1467px;
+  height: 944px;
+}
+
+.crmFromTitle {
+  width: 659px;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
