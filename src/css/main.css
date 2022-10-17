@@ -340,6 +340,7 @@ header {
   position: absolute;
   top: 0;
   left: 30%;
+  z-index: 5;
   margin-top: 24px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1562,14 +1563,20 @@ header {
   padding-bottom: 68px;
 }
 
+@media screen and (min-width: 1600px) {
+  .teamWrap {
+    padding: 0 25px;
+  }
+}
+
 .teamTitleWrap {
-  margin: 0 auto;
-  width: 1170px;
-  height: 210;
+  padding-left: 174px;
+  padding-right: 167px;
 }
 
 .teamTitle {
   margin-bottom: 50px;
+  padding: 0;
   font-family: "Helvetica Neue";
   font-weight: 700;
   font-size: 32px;
@@ -1579,6 +1586,7 @@ header {
 
 .teamText {
   margin-bottom: 68px;
+  padding: 0;
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 32px;
