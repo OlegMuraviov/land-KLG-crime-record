@@ -1,3 +1,10 @@
+.apostille {
+  margin-bottom: 31px;
+  @media screen and (min-width: 1600px){
+    margin-bottom: 68px;
+}
+}
+
 .apostilleTitle {
   margin-bottom: 9px;
   @media screen and (min-width: 1600px) {
@@ -92,6 +99,7 @@
   line-height: 13px;
   text-align: center;
   color: #b68151;
+  
   @media screen and (min-width: 1600px) {
     padding-left: 135px;
     padding-right: 229px;
