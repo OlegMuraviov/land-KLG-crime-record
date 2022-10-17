@@ -1,5 +1,4 @@
 .mobileMenu {
-  padding-bottom: 7px;
   @media (min-width: 1560px){
     display: none;
   }
@@ -21,12 +20,6 @@
   @media (min-width: 1560px) {
     display: none;
   }
-}
-
-.burgerLogo {
-  position: absolute;
-  top: 7px;
-  left: 0;
 }
 
 .menu {

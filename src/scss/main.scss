@@ -3,10 +3,12 @@
 @import './utils/variables'; //COLORS
 @import './utils/utils'; // CONTAINER
 
+@import './components/logo';
+@import './components/contacts';
 @import './layout/header';
 @import './layout/navMenu';
 @import './layout/links';
-@import './components/contacts';
+
 @import './layout/hero';
 @import './layout/footer';
 

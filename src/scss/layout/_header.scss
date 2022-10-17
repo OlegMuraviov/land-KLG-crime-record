@@ -6,4 +6,12 @@ header {
   }
 }
 
-
+.desktopMenu {
+  @media (min-width: 1560px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20px;
+    margin-bottom: 25px;
+  }
+}
