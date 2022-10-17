@@ -1132,9 +1132,7 @@ header {
 }
 
 .crmWrap {
-  padding-top: 29px;
-  padding-bottom: 33px;
-  width: 327px;
+  padding: 29px 31px 33px 32px;
 }
 @media screen and (min-width: 1600px) {
   .crmWrap {
@@ -1144,8 +1142,7 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 68px;
+    padding: 62px 62px 68px 31px;
   }
 }
 
@@ -1166,7 +1163,7 @@ header {
 
 @media screen and (min-width: 1600px) {
   .crmScriptWrap {
-    margin-right: 50px;
+    margin-right: 88px;
   }
 }
 
@@ -1176,6 +1173,8 @@ header {
 @media screen and (min-width: 1600px) {
   .crmImage {
     display: block;
+    width: 684px;
+    height: 844px;
   }
 }
 
