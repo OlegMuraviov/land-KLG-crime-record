@@ -514,6 +514,7 @@ header {
 }
 
 .heroContent {
+  position: relative;
   width: 390px;
   height: 239px;
   padding: 40px 20px 57px 20px;
@@ -522,7 +523,6 @@ header {
 }
 @media (min-width: 1600px) {
   .heroContent {
-    position: relative;
     display: block;
     padding: 145px 66px;
     width: 1560px;
@@ -580,9 +580,9 @@ header {
 .heroCardsList {
   position: absolute;
   left: 50%;
-  bottom: 26px;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  bottom: -50%;
+  -webkit-transform: translate(-50%, 65%);
+          transform: translate(-50%, 65%);
 }
 @media (min-width: 1600px) {
   .heroCardsList {
@@ -864,134 +864,237 @@ header {
 }
 
 .cardsSection {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 29px;
   text-align: center;
+}
+
+.cardsTitle {
+  padding-left: 15px;
+  padding-right: 16px;
+  margin-bottom: 8px;
+}
+@media (min-width: 1600px) {
+  .cardsTitle {
+    margin-bottom: 42px;
+  }
 }
 
 .cardsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 1449px;
 }
 
 .cardsItem {
-  margin-bottom: 7px;
-  width: 485px;
-  height: 330px;
-  border: 3px solid #b68151;
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 149px;
+  height: 112px;
+  border: 3px solid #b68151;
+  border-radius: 20px;
 }
-.cardsItem:nth-child(3n+2) {
-  width: 500px;
+.cardsItem:not(:last-child) {
+  margin-bottom: 12px;
 }
-.cardsItem:nth-child(3n+3) {
-  width: 450px;
+.cardsItem:nth-child(odd) {
+  margin-right: 25px;
+}
+.cardsItem:last-child {
+  margin-right: 0;
+}
+@media (min-width: 1600px) {
+  .cardsItem {
+    margin-bottom: 7px;
+    width: 485px;
+    height: 330px;
+  }
+  .cardsItem:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .cardsItem:not(:last-child) {
+    margin-right: 7px;
+  }
+  .cardsItem:nth-child(3n+2) {
+    width: 500px;
+  }
+  .cardsItem:nth-child(3n+3) {
+    width: 450px;
+  }
 }
 
 .cardsContent {
-  padding: 20px;
+  padding: 5px;
   width: 100%;
   text-align: center;
+}
+@media (min-width: 1600px) {
+  .cardsContent {
+    padding: 20px;
+  }
 }
 
 .cardsImage {
   margin: 0 auto;
 }
 
-.cardIcon-guardianship {
-  margin-bottom: 20px;
-  width: 134px;
-  height: 133px;
+.cardIcon1 {
+  width: 46px;
+  height: 47px;
 }
-.cardIcon-visa {
-  margin-bottom: 30px;
-  width: 159px;
-  height: 117px;
+@media (min-width: 1600px) {
+  .cardIcon1 {
+    margin-bottom: 20px;
+    width: 134px;
+    height: 133px;
+  }
 }
-.cardIcon-translation {
-  margin-bottom: 20px;
-  width: 134px;
-  height: 126px;
+.cardIcon2 {
+  margin-bottom: 10px;
+  width: 56px;
+  height: 41px;
 }
-.cardIcon-breafcase {
-  margin-bottom: 42px;
-  width: 133px;
-  height: 130px;
+@media (min-width: 1600px) {
+  .cardIcon2 {
+    margin-bottom: 30px;
+    width: 159px;
+    height: 117px;
+  }
 }
-.cardIcon-weapon {
-  margin-bottom: 5px;
-  width: 144px;
-  height: 144px;
+.cardIcon3 {
+  margin-bottom: 11px;
+  width: 47px;
+  height: 46px;
 }
-.cardIcon-paycard {
-  width: 128px;
-  height: 136px;
+@media (min-width: 1600px) {
+  .cardIcon3 {
+    margin-bottom: 20px;
+    width: 134px;
+    height: 126px;
+  }
 }
-.cardIcon-passport {
-  margin-bottom: 35px;
-  width: 150px;
-  height: 162px;
+.cardIcon4 {
+  margin-bottom: 22px;
+  width: 41px;
+  height: 41px;
 }
-.cardIcon-handsnake {
-  width: 153px;
-  height: 136px;
+@media (min-width: 1600px) {
+  .cardIcon4 {
+    margin-bottom: 42px;
+    width: 133px;
+    height: 130px;
+  }
 }
-.cardIcon-capitoly {
-  margin-bottom: 25px;
-  width: 158px;
-  height: 163px;
+.cardIcon5 {
+  margin-bottom: 11px;
+  width: 42px;
+  height: 43px;
+}
+@media (min-width: 1600px) {
+  .cardIcon5 {
+    margin-bottom: 5px;
+    width: 144px;
+    height: 144px;
+  }
+}
+.cardIcon6 {
+  width: 42px;
+  height: 43px;
+}
+@media (min-width: 1600px) {
+  .cardIcon6 {
+    width: 128px;
+    height: 136px;
+  }
+}
+.cardIcon7 {
+  margin-bottom: 11px;
+  width: 33px;
+  height: 43px;
+}
+@media (min-width: 1600px) {
+  .cardIcon7 {
+    margin-bottom: 35px;
+    width: 150px;
+    height: 162px;
+  }
+}
+.cardIcon8 {
+  width: 47px;
+  height: 44px;
+}
+@media (min-width: 1600px) {
+  .cardIcon8 {
+    width: 153px;
+    height: 136px;
+  }
+}
+.cardIcon9 {
+  margin-bottom: 10px;
+  width: 44px;
+  height: 41px;
+}
+@media (min-width: 1600px) {
+  .cardIcon9 {
+    margin-bottom: 25px;
+    width: 158px;
+    height: 163px;
+  }
 }
 
 .cardsText {
-  margin: 0 auto;
   font-family: "Helvetica Neue";
   font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 11px;
+  line-height: 13px;
 }
-.cardsText-guardianship {
-  width: 386px;
-}
-.cardsText-visa {
-  width: 394px;
-}
-.cardsText-translation {
-  width: 397px;
-}
-.cardsText-breafcase {
-  width: 377px;
-}
-.cardsText-weapon {
-  width: 386px;
-}
-.cardsText-paycard {
-  width: 387px;
-}
-.cardsText-passport {
-  width: 386px;
-}
-.cardsText-handsnake {
-  width: 384px;
-}
-.cardsText-capitoly {
-  width: 386px;
+@media (min-width: 1600px) {
+  .cardsText {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .cardsText-guardianship {
+    width: 386px;
+  }
+  .cardsText-visa {
+    width: 394px;
+  }
+  .cardsText-translation {
+    width: 397px;
+  }
+  .cardsText-breafcase {
+    width: 377px;
+  }
+  .cardsText-weapon {
+    width: 386px;
+  }
+  .cardsText-paycard {
+    width: 387px;
+  }
+  .cardsText-passport {
+    width: 386px;
+  }
+  .cardsText-handsnake {
+    width: 384px;
+  }
+  .cardsText-capitoly {
+    width: 386px;
+  }
 }
 
 .footnote__wrap {

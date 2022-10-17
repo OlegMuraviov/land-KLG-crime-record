@@ -27,13 +27,13 @@
 }
 
 .heroContent {
+  position: relative;
   width: 390px;
   height: 239px;
   padding: 40px 20px 57px 20px;
   background-image: url(../images/heroImageMobile.jpg);
   background-size: cover;
   @media (min-width: 1600px) {
-    position: relative;
     display: block;
     padding: 145px 66px;
     width: 1560px;
@@ -85,8 +85,8 @@
 .heroCardsList {
   position: absolute;
   left: 50%;
-  bottom: 26px;
-  transform: translate(-50%, 50%);
+  bottom: -50%;
+  transform: translate(-50%,65%);
   @media (min-width: 1600px) {
     bottom: 0;
     display: flex;
