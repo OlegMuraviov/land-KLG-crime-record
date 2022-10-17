@@ -131,18 +131,20 @@ body {
 
 .container {
   margin: 0px auto;
-  padding-left: 13px;
-  padding-right: 12px;
-  width: 390px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 420px;
 }
-@media screen and (min-width: 1560px) {
+@media screen and (min-width: 1600px) {
   .container {
-    width: 1560px;
+    width: 1600px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .test {
-  height: 300px;
+  height: 100px;
   background-color: grey;
 }
 
@@ -157,7 +159,7 @@ body {
 .desktopLogo {
   display: none;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .desktopLogo {
     display: block;
   }
@@ -173,13 +175,13 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-right: 10px;
+  margin-right: 28px;
   margin-left: auto;
   padding-bottom: 7px;
   width: 241px;
   text-align: center;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contacts {
     width: 680px;
     margin-right: 140px;
@@ -189,7 +191,7 @@ body {
 .contactsImage {
   margin: 0 auto;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsImage {
     margin-bottom: 9px;
   }
@@ -199,7 +201,7 @@ body {
   width: 17px;
   height: 17px;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsImage1 {
     width: 35px;
     height: 34px;
@@ -210,7 +212,7 @@ body {
   width: 19px;
   height: 22px;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsImage2 {
     width: 43px;
     height: 28px;
@@ -221,7 +223,7 @@ body {
   width: 15px;
   height: 15px;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsImage3 {
     width: 34px;
     height: 34px;
@@ -235,7 +237,7 @@ body {
   line-height: 8px;
   color: #ffffff;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsText {
     margin-bottom: 8px;
     font-size: 18px;
@@ -251,7 +253,7 @@ body {
   line-height: 7px;
   color: #000000;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .contactsContent {
     font-size: 18px;
     line-height: 22px;
@@ -262,13 +264,13 @@ header {
   padding-top: 5px;
   background-color: var(--brand-color);
 }
-@media screen and (min-width: 1560px) {
+@media screen and (min-width: 1600px) {
   header {
     padding-top: 20px;
   }
 }
 
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .desktopMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,7 +286,7 @@ header {
   }
 }
 
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .mobileMenu {
     display: none;
   }
@@ -313,7 +315,7 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .top-nav {
     display: none;
   }
@@ -393,7 +395,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .menu-button-container {
     display: none;
   }
@@ -450,7 +452,7 @@ header {
   line-height: 24px;
   color: var(--main-text-color);
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .linksText {
     font-family: "Helvetica Neue";
     font-size: 24px;
@@ -458,28 +460,35 @@ header {
   }
 }
 
-.hero {
-  display: block;
-  margin-bottom: 100px;
-  width: 1560px;
+@media (min-width: 1600px) {
+  .hero {
+    display: block;
+    margin-bottom: 100px;
+    width: 1560px;
+  }
 }
 
 .heroMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 32px 60px 32px 32px;
-  background-color: #fff;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .heroMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 32px 60px 32px 32px;
+    background-color: #fff;
+  }
 }
 
 .languageImage {
   width: 28px;
   height: 16px;
 }
-@media (min-width: 1560px) {
+@media (min-width: 1600px) {
   .languageImage {
     width: 55px;
     height: 32px;
@@ -487,44 +496,82 @@ header {
 }
 
 .heroContent {
-  position: relative;
-  display: block;
-  padding: 145px 66px;
-  width: 1560px;
-  height: 590px;
-  background-image: url(../images/hero-image.jpg);
+  width: 390px;
+  height: 239px;
+  padding: 40px 20px 57px 20px;
+  background-image: url(../images/heroImageMobile.jpg);
+  background-size: cover;
+}
+@media (min-width: 1600px) {
+  .heroContent {
+    position: relative;
+    display: block;
+    padding: 145px 66px;
+    width: 1560px;
+    height: 590px;
+    background-image: url(../images/heroImageDesktop.jpg);
+  }
 }
 
 .heroSlogan {
-  margin-bottom: 57px;
+  margin-bottom: 27px;
   font-family: "Helvetica Neue";
   font-weight: 400;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 30px;
   color: var(--additional-text-color);
 }
+@media (min-width: 1600px) {
+  .heroSlogan {
+    margin-bottom: 57px;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--additional-text-color);
+  }
+}
 
-.heroButton {
-  padding: 24px 28px;
-  font-family: "Helvetica Neue";
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 42px;
-  color: var(--main-text-color);
+.heroButtonWrap {
+  width: 198px;
   border-radius: 29px;
   background-color: #fff;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .heroButtonWrap {
+    width: 510px;
+  }
+}
+
+.heroButtonText {
+  padding: 2px 38px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: var(--main-text-color);
   cursor: pointer;
+}
+@media (min-width: 1600px) {
+  .heroButtonText {
+    padding: 24px 28px;
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 
 .heroCardsList {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   left: 50%;
-  bottom: 0;
+  bottom: 26px;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
+}
+@media (min-width: 1600px) {
+  .heroCardsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .heroCardsItem {
@@ -538,13 +585,23 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 5px;
-  width: 390px;
-  height: 186px;
-  border-radius: 20px;
+  width: 266px;
+  height: 137px;
   background-color: #d0ae90;
+  border-radius: 20px;
 }
 .heroCardsItem:not(:last-child) {
-  margin-right: 104px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1600px) {
+  .heroCardsItem {
+    margin-bottom: 0;
+    width: 390px;
+    height: 186px;
+  }
+  .heroCardsItem:not(:last-child) {
+    margin-right: 104px;
+  }
 }
 
 .heroCardImage-scales {
@@ -564,24 +621,51 @@ header {
 }
 
 .heroCardDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
+}
+@media (min-width: 1600px) {
+  .heroCardDescription {
+    display: block;
+  }
 }
 
 .heroCardTitle {
-  margin-bottom: 20px;
   font-family: "Helvetica Neue";
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 29px;
   color: var(--main-text-color);
+}
+@media (min-width: 1600px) {
+  .heroCardTitle {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .heroCardText {
   font-family: "Helvetica Neue";
   font-weight: 700;
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   color: var(--additional-text-color);
+}
+@media (min-width: 1600px) {
+  .heroCardText {
+    font-size: 23px;
+    line-height: 28px;
+  }
 }
 
 .footerTitle {

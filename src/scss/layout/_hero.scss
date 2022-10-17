@@ -1,61 +1,94 @@
 .hero {
-  display: block;
-  margin-bottom: 100px;
-  width: 1560px;
+  @media (min-width: 1600px) {
+    display: block;
+    margin-bottom: 100px;
+    width: 1560px;
+  }
 }
 
 .heroMenu {
-  display: flex;
-  justify-content: space-between;
-  padding: 32px 60px 32px 32px;
-  background-color: #fff;
+  display: none;
+  @media (min-width: 1600px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 60px 32px 32px;
+    background-color: #fff;
+  }
 }
 
 .languageImage {
   width: 28px;
   height: 16px;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     width: 55px;
     height: 32px;
   }
 }
 
 .heroContent {
-  position: relative;
-  display: block;
-  padding: 145px 66px;
-  width: 1560px;
-  height: 590px;
-  background-image: url(../images/hero-image.jpg);
+  width: 390px;
+  height: 239px;
+  padding: 40px 20px 57px 20px;
+  background-image: url(../images/heroImageMobile.jpg);
+  background-size: cover;
+  @media (min-width: 1600px) {
+    position: relative;
+    display: block;
+    padding: 145px 66px;
+    width: 1560px;
+    height: 590px;
+    background-image: url(../images/heroImageDesktop.jpg);
+  }
 }
 
 .heroSlogan {
-  margin-bottom: 57px;
+  margin-bottom: 27px;
   font-family: "Helvetica Neue";
   font-weight: 400;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 30px;
   color: var(--additional-text-color);
+  @media (min-width: 1600px) {
+    margin-bottom: 57px;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--additional-text-color);
+  }
 }
 
-.heroButton {
-  padding: 24px 28px;
-  font-family: "Helvetica Neue";
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 42px;
-  color: var(--main-text-color);
+.heroButtonWrap {
+  width: 198px;
   border-radius: 29px;
   background-color: #fff;
+  text-align: center;
+  @media (min-width: 1600px) {
+    width: 510px;
+  }
+}
+
+.heroButtonText {
+  padding: 2px 38px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: var(--main-text-color);
   cursor: pointer;
+  @media (min-width: 1600px) {
+    padding: 24px 28px;
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 
 .heroCardsList {
   position: absolute;
-  display: flex;
   left: 50%;
-  bottom: 0;
+  bottom: 26px;
   transform: translate(-50%, 50%);
+  @media (min-width: 1600px) {
+    display: flex;
+  }
 }
 
 .heroCardsItem {
@@ -63,13 +96,22 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 5px;
-  width: 390px;
-  height: 186px;
-  border-radius: 20px;
+  width: 266px;
+  height: 137px;
   background-color: #d0ae90;
+  border-radius: 20px;
 
   &:not(:last-child) {
-    margin-right: 104px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1600px) {
+    margin-bottom: 0;
+    width: 390px;
+    height: 186px;
+    &:not(:last-child) {
+      margin-right: 104px;
+    }
   }
 }
 
@@ -94,22 +136,36 @@
 }
 
 .heroCardDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  @media (min-width: 1600px){
+    display: block;
+  }
 }
 
 .heroCardTitle {
-  margin-bottom: 20px;
   font-family: "Helvetica Neue";
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 29px;
   color: var(--main-text-color);
+  @media (min-width: 1600px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .heroCardText {
   font-family: "Helvetica Neue";
   font-weight: 700;
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   color: var(--additional-text-color);
+  @media (min-width: 1600px) {
+    font-size: 23px;
+    line-height: 28px;
+  }
 }

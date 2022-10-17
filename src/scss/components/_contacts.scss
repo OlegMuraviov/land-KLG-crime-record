@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-right: 10px;
+  margin-right: 28px;
   margin-left: auto;
   padding-bottom: 7px;
   width: 241px;
   text-align: center;
 
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     width: 680px;
     margin-right: 140px;
   }
@@ -18,7 +18,7 @@
 
 .contactsImage {
   margin: 0 auto;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     margin-bottom: 9px;
   }
 }
@@ -26,7 +26,7 @@
 .contactsImage1 {
   width: 17px;
   height: 17px;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     width: 35px;
     height: 34px;
   }
@@ -35,7 +35,7 @@
 .contactsImage2 {
   width: 19px;
   height: 22px;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     width: 43px;
     height: 28px;
   }
@@ -44,7 +44,7 @@
 .contactsImage3 {
   width: 15px;
   height: 15px;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     width: 34px;
     height: 34px;
   }
@@ -56,7 +56,7 @@
   font-size: 8px;
   line-height: 8px;
   color: #ffffff;
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     margin-bottom: 8px;
     font-size: 18px;
     line-height: 17px;
@@ -71,7 +71,7 @@
   line-height: 7px;
   color: #000000;
 
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     font-size: 18px;
     line-height: 22px;
   }

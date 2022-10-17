@@ -1,13 +1,13 @@
 header {
   padding-top: 5px;
   background-color: var(--brand-color);
-  @media screen and (min-width: 1560px) {
+  @media screen and (min-width: 1600px) {
     padding-top: 20px;
   }
 }
 
 .desktopMenu {
-  @media (min-width: 1560px) {
+  @media (min-width: 1600px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
