@@ -1330,6 +1330,17 @@ header {
   }
 }
 
+.additionalServiseWrap {
+  padding-left: 44px;
+  padding-right: 45px;
+}
+@media screen and (min-width: 1600px) {
+  .additionalServiseWrap {
+    padding-left: 55px;
+    padding-right: 48px;
+  }
+}
+
 .additionalServiceTitle {
   margin-bottom: 25px;
   font-family: "Helvetica Neue";
@@ -1369,11 +1380,16 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .additionalServiceItem {
-  padding: 6px 10px 10px 15px;
+  position: relative;
+  padding: 6px 10px 45px 15px;
   width: 300px;
   border-radius: 20px;
   background-color: rgba(55, 37, 20, 0.82);
@@ -1383,7 +1399,6 @@ header {
 }
 @media screen and (min-width: 1600px) {
   .additionalServiceItem {
-    position: relative;
     padding-top: 23px;
     padding-left: 38px;
     padding-right: 38px;
@@ -1394,6 +1409,9 @@ header {
   .additionalServiceItem:last-child {
     padding-top: 46px;
     margin-left: 122px;
+  }
+  .additionalServiceItem:first-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -1423,10 +1441,15 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .additionalServiceItemTitle {
+  padding-bottom: 8px;
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 15px;
@@ -1445,11 +1468,35 @@ header {
   width: 42px;
   height: 38px;
 }
+@media screen and (min-width: 1600px) {
+  .additionalServiceImageTranslation {
+    margin-right: 0;
+    margin-left: 105px;
+    width: 157px;
+    height: 151px;
+  }
+}
 
 .additionalServiceImageDelivery {
   margin-right: 7px;
+  margin-bottom: 5px;
   width: 57px;
   height: 36px;
+}
+@media screen and (min-width: 1600px) {
+  .additionalServiceImageDelivery {
+    margin-right: 0;
+    margin-left: 18px;
+    margin-bottom: 0;
+    width: 195px;
+    height: 123px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .additionalServiceItemTitleDelivery {
+    text-align: center;
+  }
 }
 
 .additionalServiceItemText {
@@ -1467,36 +1514,47 @@ header {
   }
 }
 
+.additionalServiceButtonLink {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 139px;
+  height: 29px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
 @media screen and (min-width: 1600px) {
   .additionalServiceButtonLink {
-    position: absolute;
     left: 50%;
     bottom: 38px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 350px;
     height: 85px;
     background-color: #ffffff;
-    border-radius: 20px;
   }
 }
 
+.additionalServiceButtonText {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-text-color);
+}
 @media screen and (min-width: 1600px) {
   .additionalServiceButtonText {
-    font-family: "Helvetica Neue";
-    font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    color: var(--main-text-color);
   }
 }
 
