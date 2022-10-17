@@ -1,12 +1,9 @@
 header {
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: var(--brand-color);
+  @media screen and (min-width: 1560px) {
+    padding-top: 20px;
+  }
 }
 
-.contactsWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-left: -50px;
-  margin-bottom: 24px;
-}
+
