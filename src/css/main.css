@@ -1187,6 +1187,16 @@ header {
   }
 }
 
+.apostilleWrap {
+  padding-left: 28px;
+  padding-right: 27px;
+}
+@media screen and (min-width: 1600px) {
+  .apostilleWrap {
+    padding: 0;
+  }
+}
+
 .apostilleTitle {
   margin-bottom: 9px;
 }
