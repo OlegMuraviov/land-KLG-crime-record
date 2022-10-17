@@ -1,0 +1,66 @@
+.team {
+    padding-bottom: 68px;
+}
+
+.teamTitleWrap {
+  margin: 0 auto;
+  width: 1170px;
+  height: 210;
+}
+.teamTitle {
+  margin-bottom: 50px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.teamText {
+  margin-bottom: 68px;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.teamList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamItem {
+  width: 327px;
+  height: 556px;
+  padding: 10px;
+  background-color: var(--brand-color);
+
+  &:not(:last-child) {
+    margin-right: 73px;
+  }
+}
+
+.teamItemImage {
+  margin-bottom: 20px;
+}
+
+.teamItemTitle {
+  margin-bottom: 18px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--additional-text-color);
+}
+
+.teamItemText {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--additional-text-color);
+}
