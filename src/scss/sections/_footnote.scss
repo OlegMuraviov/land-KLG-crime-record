@@ -1,18 +1,27 @@
-.footnote__wrap{
+.footnote__wrap {
+  padding: 20px 39px;
+  background-color: var(--brand-color);
+
+  @media screen and (min-width: 1600px) {
     padding: 20px 60px 35px 60px;
-    background-color: var(--brand-color);
+  }
 }
 
 .footnote__text {
-    font-family: "Helvetica Neue";
-    font-weight: 500;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--additional-text-color);
+  @media screen and (min-width: 1600px) {
     font-size: 35px;
     line-height: 43px;
-    text-align: center;
-    color: var(--additional-text-color);
-
+  }
 }
-
 .footnote__text:not(:last-child) {
-    margin-bottom: 50px;    
+  margin-bottom: 25px;
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+  }
 }

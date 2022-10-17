@@ -159,7 +159,7 @@ body {
 .desktopLogo {
   display: none;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .desktopLogo {
     display: block;
   }
@@ -181,7 +181,7 @@ body {
   width: 241px;
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contacts {
     width: 680px;
     margin-right: 140px;
@@ -191,7 +191,7 @@ body {
 .contactsImage {
   margin: 0 auto;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsImage {
     margin-bottom: 9px;
   }
@@ -201,7 +201,7 @@ body {
   width: 17px;
   height: 17px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsImage1 {
     width: 35px;
     height: 34px;
@@ -212,7 +212,7 @@ body {
   width: 19px;
   height: 22px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsImage2 {
     width: 43px;
     height: 28px;
@@ -223,7 +223,7 @@ body {
   width: 15px;
   height: 15px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsImage3 {
     width: 34px;
     height: 34px;
@@ -237,7 +237,7 @@ body {
   line-height: 8px;
   color: #ffffff;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsText {
     margin-bottom: 8px;
     font-size: 18px;
@@ -253,7 +253,7 @@ body {
   line-height: 7px;
   color: #000000;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .contactsContent {
     font-size: 18px;
     line-height: 22px;
@@ -268,7 +268,7 @@ body {
   color: var(--main-text-color);
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .sectionTitle {
     font-size: 35px;
     line-height: 43px;
@@ -285,7 +285,7 @@ header {
   }
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .desktopMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -301,7 +301,7 @@ header {
   }
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .mobileMenu {
     display: none;
   }
@@ -330,7 +330,7 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .top-nav {
     display: none;
   }
@@ -410,7 +410,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .menu-button-container {
     display: none;
   }
@@ -467,7 +467,7 @@ header {
   line-height: 24px;
   color: var(--main-text-color);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .linksText {
     font-family: "Helvetica Neue";
     font-size: 24px;
@@ -478,7 +478,7 @@ header {
 .hero {
   margin-bottom: 437px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .hero {
     display: block;
     margin-bottom: 150px;
@@ -489,7 +489,7 @@ header {
 .heroMenu {
   display: none;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -506,7 +506,7 @@ header {
   width: 28px;
   height: 16px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .languageImage {
     width: 55px;
     height: 32px;
@@ -521,7 +521,7 @@ header {
   background-image: url(../images/heroImageMobile.jpg);
   background-size: cover;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroContent {
     display: block;
     padding: 145px 66px;
@@ -539,7 +539,7 @@ header {
   line-height: 30px;
   color: var(--additional-text-color);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroSlogan {
     margin-bottom: 57px;
     font-size: 50px;
@@ -554,7 +554,7 @@ header {
   background-color: #fff;
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroButtonWrap {
     width: 510px;
   }
@@ -569,7 +569,7 @@ header {
   color: var(--main-text-color);
   cursor: pointer;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroButtonText {
     padding: 24px 28px;
     font-size: 35px;
@@ -584,7 +584,7 @@ header {
   -webkit-transform: translate(-50%, 65%);
           transform: translate(-50%, 65%);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroCardsList {
     bottom: 0;
     display: -webkit-box;
@@ -612,7 +612,7 @@ header {
 .heroCardsItem:not(:last-child) {
   margin-bottom: 10px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroCardsItem {
     margin-bottom: 0;
     width: 390px;
@@ -652,7 +652,7 @@ header {
           justify-content: space-between;
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroCardDescription {
     display: block;
   }
@@ -665,7 +665,7 @@ header {
   line-height: 29px;
   color: var(--main-text-color);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroCardTitle {
     margin-bottom: 20px;
     font-size: 30px;
@@ -680,7 +680,7 @@ header {
   line-height: 20px;
   color: var(--additional-text-color);
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .heroCardText {
     font-size: 23px;
     line-height: 28px;
@@ -785,7 +785,7 @@ header {
 .extract {
   padding-bottom: 18px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extract {
     padding-bottom: 68px;
   }
@@ -794,13 +794,13 @@ header {
 .extractTitle {
   margin-bottom: 10px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extractTitle {
     margin-bottom: 64px;
   }
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extractContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,7 +821,7 @@ header {
   background-image: url("../images/certificateMobile.jpg");
   block-size: "contain";
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extractImageWrap {
     margin-right: 60px;
     margin-bottom: 0;
@@ -837,7 +837,7 @@ header {
   width: 299px;
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extractDescription {
     width: 753px;
     padding-right: 20px;
@@ -853,7 +853,7 @@ header {
 .extractText:not(:last-child) {
   margin-bottom: 20px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .extractText {
     font-size: 32px;
     line-height: 38px;
@@ -873,7 +873,7 @@ header {
   padding-right: 16px;
   margin-bottom: 8px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardsTitle {
     margin-bottom: 42px;
   }
@@ -918,7 +918,7 @@ header {
 .cardsItem:last-child {
   margin-right: 0;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardsItem {
     margin-bottom: 7px;
     width: 485px;
@@ -943,7 +943,7 @@ header {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardsContent {
     padding: 20px;
   }
@@ -957,7 +957,7 @@ header {
   width: 46px;
   height: 47px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon1 {
     margin-bottom: 20px;
     width: 134px;
@@ -969,7 +969,7 @@ header {
   width: 56px;
   height: 41px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon2 {
     margin-bottom: 30px;
     width: 159px;
@@ -981,7 +981,7 @@ header {
   width: 47px;
   height: 46px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon3 {
     margin-bottom: 20px;
     width: 134px;
@@ -993,7 +993,7 @@ header {
   width: 41px;
   height: 41px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon4 {
     margin-bottom: 42px;
     width: 133px;
@@ -1005,7 +1005,7 @@ header {
   width: 42px;
   height: 43px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon5 {
     margin-bottom: 5px;
     width: 144px;
@@ -1016,7 +1016,7 @@ header {
   width: 42px;
   height: 43px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon6 {
     width: 128px;
     height: 136px;
@@ -1027,7 +1027,7 @@ header {
   width: 33px;
   height: 43px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon7 {
     margin-bottom: 35px;
     width: 150px;
@@ -1038,7 +1038,7 @@ header {
   width: 47px;
   height: 44px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon8 {
     width: 153px;
     height: 136px;
@@ -1049,7 +1049,7 @@ header {
   width: 44px;
   height: 41px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardIcon9 {
     margin-bottom: 25px;
     width: 158px;
@@ -1063,7 +1063,7 @@ header {
   font-size: 11px;
   line-height: 13px;
 }
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .cardsText {
     font-size: 32px;
     line-height: 38px;
@@ -1098,21 +1098,37 @@ header {
 }
 
 .footnote__wrap {
-  padding: 20px 60px 35px 60px;
+  padding: 20px 39px;
   background-color: var(--brand-color);
+}
+@media screen and (min-width: 1600px) {
+  .footnote__wrap {
+    padding: 20px 60px 35px 60px;
+  }
 }
 
 .footnote__text {
   font-family: "Helvetica Neue";
   font-weight: 500;
-  font-size: 35px;
-  line-height: 43px;
+  font-size: 15px;
+  line-height: 18px;
   text-align: center;
   color: var(--additional-text-color);
 }
+@media screen and (min-width: 1600px) {
+  .footnote__text {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
 
 .footnote__text:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1600px) {
+  .footnote__text:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .crmWrap {
