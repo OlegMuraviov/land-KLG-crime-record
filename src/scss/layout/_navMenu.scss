@@ -1,113 +1,122 @@
-.top-nav {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 350px;
-    height: 24px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
-    @media (min-width: 1560px) {
-      display: none;
-    }
-  }
-  
-  .burgerLogo {
-    position: absolute;
-    top: 7px;
-    left: 0;
-  }
-  
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 24px;
-    left: 30%;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border-bottom: 1px solid #333;
-    height: auto;
-    padding: 5px;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    width: 70%;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-  
-  .menu > li {
-    margin: 0 1rem;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  
-  .menu-button-container {
-    display: flex;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media (min-width: 1560px){
-        display: none;
-    }
-  }
-  
-  #menu-toggle {
+.mobileMenu {
+  padding-bottom: 7px;
+  @media (min-width: 1560px){
     display: none;
   }
-  
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
-    display: block;
-    background-color: #000000;
-    position: absolute;
-    height: 2px;
-    width: 13px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.top-nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 350px;
+  height: 24px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: 1560px) {
+    display: none;
   }
-  
-  .menu-button::before {
-    content: "";
-    margin-top: -3px;
+}
+
+.burgerLogo {
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  margin-top: 24px;
+
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  border-bottom: 1px solid #333;
+  height: auto;
+  padding: 5px;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 70%;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.menu-button-container {
+  display: flex;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1560px) {
+    display: none;
   }
-  
-  .menu-button::after {
-    content: "";
-    margin-top: 3px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  height: 2px;
+  width: 13px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -3px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 3px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
