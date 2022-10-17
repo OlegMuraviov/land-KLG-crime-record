@@ -1132,24 +1132,50 @@ header {
 }
 
 .crmWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 40px;
-  width: 1467px;
-  height: 944px;
+  padding-top: 29px;
+  padding-bottom: 33px;
+}
+@media screen and (min-width: 1600px) {
+  .crmWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 68px;
+  }
 }
 
-.crmFromTitle {
-  width: 659px;
+.crmFormTitle {
   font-family: "Helvetica Neue";
   font-weight: 500;
-  font-size: 35px;
-  line-height: 43px;
+  font-size: 15px;
+  line-height: 18px;
   text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .crmFormTitle {
+    width: 659px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .crmScriptWrap {
+    margin-right: 50px;
+  }
+}
+
+.crmImage {
+  display: none;
+}
+@media screen and (min-width: 1600px) {
+  .crmImage {
+    display: block;
+  }
 }
 
 .apostille {

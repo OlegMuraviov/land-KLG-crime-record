@@ -1,17 +1,36 @@
 .crmWrap {
+  padding-top: 29px;
+  padding-bottom: 33px;
+  @media screen and (min-width: 1600px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 40px;
-    width: 1467px;
-    height: 944px;
-   
+    padding-bottom: 68px;   
+  }
 }
 
-.crmFromTitle {
+.crmFormTitle {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  @media screen and (min-width: 1600px) {
     width: 659px;
-    font-family: 'Helvetica Neue';
-    font-weight: 500;
     font-size: 35px;
     line-height: 43px;
-    text-align: center;
+  }
+}
+
+.crmScriptWrap {
+    @media screen and (min-width: 1600px) {
+        margin-right: 50px;
+    }
+}
+
+.crmImage {
+    display: none;
+    @media screen and (min-width: 1600px){
+        display: block;
+    }
 }
