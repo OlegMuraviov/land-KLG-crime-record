@@ -325,6 +325,101 @@ header {
   color: var(--additional-text-color);
 }
 
+.footerTitle {
+  margin-bottom: 50px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.footerBackground {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--brand-color);
+}
+
+.footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerLogo {
+  margin-right: 68px;
+  width: 366px;
+  height: 197px;
+}
+
+.footerContentText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerText {
+  margin-right: 145px;
+  width: 455px;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: var(--additional-text-color);
+}
+
+.footerContacts {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: auto;
+}
+
+.footerContactsItem {
+  margin-bottom: 35px;
+}
+
+.footerLink,
+.footerAdressWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactsImageFooter {
+  margin-bottom: 0px;
+}
+.contactsImageFooterPhone {
+  margin-right: 12px;
+}
+.contactsImageFooterEnvelope {
+  margin-right: 7px;
+}
+.contactsImageFooterMap {
+  margin-right: 18px;
+}
+
+.footerContectsText {
+  text-align: start;
+}
+
 .extract {
   padding-top: 50px;
 }
@@ -501,7 +596,7 @@ header {
 
 .footnote__wrap {
   padding: 20px 60px 35px 60px;
-  background-color: #b68151;
+  background-color: var(--brand-color);
 }
 
 .footnote__text {
