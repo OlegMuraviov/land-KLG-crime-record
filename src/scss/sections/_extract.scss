@@ -1,41 +1,69 @@
 .extract {
-    padding-top: 50px;
-    
+    padding-bottom: 18px;
+    @media (min-width: 1600px){
+        padding-bottom: 68px;
+    }
 }
 
-.sectionTitle {
-    margin-bottom: 65px;
-    font-family: "Helvetica Neue";
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 43px;
-    color: var(--main-text-color);
-    text-align: center;
+.extractTitle {
+  margin-bottom: 10px;
+  @media (min-width: 1600px) {
+    margin-bottom: 64px;
+  }
 }
 
 .extractContent {
+  @media (min-width: 1600px) {
     display: flex;
     align-items: center;
+  }
 }
 
-.extractImage {
+.extractImageWrap {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 385px;
+  height: 169px;
+  border: 10px solid #372306;
+  background-image: url("../images/certificateMobile.jpg");
+  block-size: "contain";
+  @media (min-width: 1600px) {
     margin-right: 60px;
+    margin-bottom: 0;
+    width: 678px;
+    height: 543px;
     border: 19px solid #372306;
+    background-image: url("../images/certificateDesktop.jpg");
+  }
 }
 
-.extractDescription{
+.extractDescription {
+  margin: 0 auto;
+  width: 299px;
+  text-align: center;
+  @media (min-width: 1600px) {
     width: 753px;
     padding-right: 20px;
-    text-align: center;
+  }
 }
 
 .extractText {
-    font-family: "Helvetica Neue";
-    font-weight: 400;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1600px) {
     font-size: 32px;
     line-height: 38px;
 
-    &:not(:last-child){
-        margin-bottom: 40px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
     }
+  }
 }

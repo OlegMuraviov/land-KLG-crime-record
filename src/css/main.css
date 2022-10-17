@@ -260,6 +260,21 @@ body {
   }
 }
 
+.sectionTitle {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .sectionTitle {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
 header {
   padding-top: 5px;
   background-color: var(--brand-color);
@@ -460,10 +475,13 @@ header {
   }
 }
 
+.hero {
+  margin-bottom: 437px;
+}
 @media (min-width: 1600px) {
   .hero {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     width: 1560px;
   }
 }
@@ -568,6 +586,7 @@ header {
 }
 @media (min-width: 1600px) {
   .heroCardsList {
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -764,47 +783,84 @@ header {
 }
 
 .extract {
-  padding-top: 50px;
+  padding-bottom: 18px;
+}
+@media (min-width: 1600px) {
+  .extract {
+    padding-bottom: 68px;
+  }
 }
 
-.sectionTitle {
-  margin-bottom: 65px;
-  font-family: "Helvetica Neue";
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 43px;
-  color: var(--main-text-color);
-  text-align: center;
+.extractTitle {
+  margin-bottom: 10px;
+}
+@media (min-width: 1600px) {
+  .extractTitle {
+    margin-bottom: 64px;
+  }
 }
 
-.extractContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 1600px) {
+  .extractContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.extractImage {
-  margin-right: 60px;
-  border: 19px solid #372306;
+.extractImageWrap {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  width: 385px;
+  height: 169px;
+  border: 10px solid #372306;
+  background-image: url("../images/certificateMobile.jpg");
+  block-size: "contain";
+}
+@media (min-width: 1600px) {
+  .extractImageWrap {
+    margin-right: 60px;
+    margin-bottom: 0;
+    width: 678px;
+    height: 543px;
+    border: 19px solid #372306;
+    background-image: url("../images/certificateDesktop.jpg");
+  }
 }
 
 .extractDescription {
-  width: 753px;
-  padding-right: 20px;
+  margin: 0 auto;
+  width: 299px;
   text-align: center;
+}
+@media (min-width: 1600px) {
+  .extractDescription {
+    width: 753px;
+    padding-right: 20px;
+  }
 }
 
 .extractText {
   font-family: "Helvetica Neue";
   font-weight: 400;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 12px;
+  line-height: 14px;
 }
 .extractText:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1600px) {
+  .extractText {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .extractText:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .cardsSection {
