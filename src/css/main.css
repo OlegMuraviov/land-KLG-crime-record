@@ -134,11 +134,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1560px;
-  }
+  width: 1560px;
 }
 
 header {
@@ -444,12 +440,13 @@ header {
 }
 
 .extractImage {
-  margin-right: 102px;
+  margin-right: 60px;
   border: 19px solid #372306;
 }
 
 .extractDescription {
   width: 753px;
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -635,6 +632,7 @@ header {
 
 .apostille {
   padding-top: 70px;
+  padding-right: 20px;
 }
 
 .apostilleContent {
