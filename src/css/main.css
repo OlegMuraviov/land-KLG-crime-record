@@ -597,4 +597,108 @@ header {
   line-height: 38px;
   text-align: center;
   color: #B68151;
+}
+
+.additionalService {
+  padding-top: 68px;
+  padding-bottom: 100px;
+}
+
+.additionalServiceTitle {
+  margin-bottom: 68px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.additionalServiceList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.additionalServiceItem {
+  position: relative;
+  padding-top: 23px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 38px;
+  width: 667px;
+  height: 787px;
+  background-color: rgba(55, 37, 20, 0.82);
+  border-radius: 20px;
+}
+.additionalServiceItem:last-child {
+  padding-top: 46px;
+  margin-left: 122px;
+}
+
+.additionalServiceItemTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.additionalServiceItemTitle {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--additional-text-color);
+}
+
+.additionalServiceItemTitleTranslations {
+  margin-right: 105px;
+}
+
+.additionalServiceItemTitleDelivery {
+  margin-right: 18px;
+}
+
+.additionalServiceItemText {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: justify;
+  color: var(--additional-text-color);
+}
+
+.additionalServiceButtonLink {
+  position: absolute;
+  left: 50%;
+  bottom: 38px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 85px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.additionalServiceButtonText {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--main-text-color);
 }/*# sourceMappingURL=main.css.map */
