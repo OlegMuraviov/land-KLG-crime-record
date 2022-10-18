@@ -1,20 +1,19 @@
 
 
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-right: 28px;
-  margin-left: auto;
-  padding-bottom: 7px;
-  width: 241px;
-  text-align: center;
+// .contacts {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+  
+//   padding-bottom: 7px;
+//   width: 241px;
+//   text-align: center;
 
-  @media screen and (min-width: 1600px) {
-    width: 680px;
-    margin-right: 140px;
-  }
-}
+//   @media screen and (min-width: 1600px) {
+//     width: 680px;
+//     margin-right: 140px;
+//   }
+// }
 
 .contactsImage {
   margin: 0 auto;
