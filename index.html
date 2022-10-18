@@ -40,21 +40,23 @@
             <ul class="menu">
               <li>
                 <a href="#extractSection"
-                  ><p class="linksText">Витяг про несудимість</p></a
+                  ><p class="lng-menuBurgerExtract linksText">
+                    Витяг про несудимість
+                  </p></a
                 >
               </li>
               <li>
                 <a href="#apostilleSection"
-                  ><p class="linksText">Апостиль та легалізація витягу</p></a
+                  ><p class="lng-menuBurgerApostille linksText">Апостиль та легалізація витягу</p></a
                 >
               </li>
               <li>
                 <a href="#additionalServices"
-                  ><p class="linksText">Відправка документів закордон</p></a
+                  ><p class="lng-menuBurgerSend linksText">Відправка документів закордон</p></a
                 >
               </li>
               <li>
-                <a href="#crmSection"><p class="linksText">Як замовити?</p></a>
+                <a href="#crmSection"><p class="lng-menuBurgerHowUse linksText">Як замовити?</p></a>
               </li>
               <li>
                 <img
@@ -81,7 +83,7 @@
                   src="./src/images/icon-phone.svg"
                   alt="іконка телефона"
                 />
-                <p class="contactsText">Є запитання?</p>
+                <p class="lng-menuHeaderAnyQ contactsText">Є запитання?</p>
                 <p class="contactsContent">+38(098) 138-39-79</p>
               </a>
             </li>
@@ -92,7 +94,7 @@
                   src="./src/images/icon-envelope.svg"
                   alt="іконка конверта"
                 />
-                <p class="contactsText">Пошта</p>
+                <p class="lng-headerEmail contactsText">Пошта</p>
                 <p class="contactsContent">callcenter.via.klg@gmail.com</p></a
               >
             </li>
@@ -102,8 +104,8 @@
                 src="./src/images/icon-map.svg"
                 alt="іконка мапи"
               />
-              <p class="contactsText">Адреса</p>
-              <p class="contactsContent">Київ, Ковпака, 17</p>
+              <p class="lng-headerAdressTitle contactsText">Адреса</p>
+              <p class="lng-headerAdress contactsContent">Київ, Ковпака, 17</p>
             </li>
           </ul>
         </div>
@@ -112,38 +114,42 @@
           <ul class="heroMenu">
             <li>
               <a href="#extractSection"
-                ><p class="heroText">Витяг про несудимість</p></a
+                ><p class="lng-menuHeroExtract heroText">Витяг про несудимість</p></a
               >
             </li>
             <li>
               <a href="#apostilleSection"
-                ><p class="heroText">Апостиль та легалізація витягу</p></a
+                ><p class="lng-menuHeroApostille heroText">Апостиль та легалізація витягу</p></a
               >
             </li>
             <li>
               <a href="#additionalServices"
-                ><p class="heroText">Відправка документів закордон</p></a
+                ><p class="lng-menuHeroSend heroText">Відправка документів закордон</p></a
               >
             </li>
             <li>
-              <a href="#crmSection"><p class="heroText">Як замовити?</p></a>
+              <a href="#crmSection"><p class="lng-menuHeroHowUse heroText">Як замовити?</p></a>
             </li>
             <li>
-              <img
+              <select class="changeLang">
+                <option value="uk" selected>UA</option>
+                <option value="ru">RU</option>
+                <!-- <img 
                 class="languageImage"
                 src="./src/images/language.jpg"
                 alt="українська мова"
-              />
+              /> -->
+              </select>
             </li>
           </ul>
           <div class="heroContent">
-            <p class="heroSlogan">
+            <p class="lng-heroSlogan heroSlogan">
               Ми - Відповідь на Ваші <br />
               запитання!
             </p>
             <div class="heroButtonWrap">
               <a href="#crmSection" class="heroButton">
-                <p class="heroButtonText">Безкоштовна консультація</p>
+                <p class="lng-heroButtonText heroButtonText">Безкоштовна консультація</p>
               </a>
             </div>
 
@@ -155,8 +161,8 @@
                   alt="ваги"
                 />
                 <div class="heroCardDescription">
-                  <p class="heroCardTitle">12 років</p>
-                  <p class="heroCardText">досвіду у сфері документообігу</p>
+                  <p class="lng-twelveYears heroCardTitle">12 років</p>
+                  <p class="lng-heroExpirience heroCardText">досвіду у сфері документообігу</p>
                 </div>
               </li>
               <li class="heroCardsItem">
@@ -166,8 +172,8 @@
                   alt="документи"
                 />
                 <div class="heroCardDescription">
-                  <p class="heroCardTitle">65000 документів</p>
-                  <p class="heroCardText">
+                  <p class="lng-heroCountDocs heroCardTitle">65000 документів</p>
+                  <p class="lng-heroFastAndPositive heroCardText">
                     успішно отримані зі швидким результатом
                   </p>
                 </div>
@@ -179,8 +185,8 @@
                   alt="юристи"
                 />
                 <div class="heroCardDescription">
-                  <p class="heroCardTitle">22 юристи</p>
-                  <p class="heroCardText">
+                  <p class="lng-heroLawyers heroCardTitle">22 юристи</p>
+                  <p class="lng-heroAnyAnswer heroCardText">
                     що нададуть відповідь на будь-яке запитання
                   </p>
                 </div>
@@ -195,18 +201,18 @@
 
       <section class="extract">
         <div class="container">
-          <h1 id="extractSection" class="sectionTitle extractTitle">
+          <h1 id="extractSection" class="lng-extractTitle sectionTitle extractTitle">
             ВИТЯГ ПРО ВІДСУТНІСТЬ СУДИМОСТІ
           </h1>
           <div class="extractContent">
             <div class="extractImageWrap"></div>
             <div class="extractDescription">
-              <p class="extractText">
+              <p class="lng-extractTextMain extractText">
                 Довідка про відсутність судимості - це документ, де вказується
                 наявність/відсутність відомостей про притягнення до кримінальної
                 відповідальності.
               </p>
-              <p class="extractText">
+              <p class="lng-extractTextAdd extractText">
                 Вона може бути потрібною кожному, хто планує: <br />
                 1. влаштуватись на роботу; <br />2. виїхати за кордон; <br />
                 3. змінити прізвище/ім’я/по-батькові; <br />
@@ -219,7 +225,7 @@
       </section>
       <!--*--*--*--*--*-- CARDS --*--*--*--*--*-->
       <section class="container cardsSection">
-        <h2 class="sectionTitle cardsTitle">
+        <h2 class="lng-cardsTitle sectionTitle cardsTitle">
           ДЛЯ ЗРУЧНОСТІ МИ ВИДІЛИЛИ ОСНОВНІ ФОРМИ ВИТЯГІВ, ЯКІ ПОТРІБНІ ДЛЯ:
         </h2>
         <ul class="cardsList">
@@ -230,7 +236,7 @@
                 src="./src/images/icon-guardianship.svg"
                 alt="дитина в руках"
               />
-              <p class="cardsText cardsText-guardianship">
+              <p class="lng-card1 cardsText cardsText-guardianship">
                 усиновлення, встановлення опіки (піклування)
               </p>
             </div>
@@ -242,7 +248,7 @@
                 src="./src/images/icon-visa.svg"
                 alt="віза"
               />
-              <p class="cardsText cardsText-visa">
+              <p class="lng-card2 cardsText cardsText-visa">
                 оформлення візи для виїзду за кордон
               </p>
             </div>
@@ -254,7 +260,7 @@
                 src="./src/images/icon-translation.svg"
                 alt="переклад"
               />
-              <p class="cardsText cardsText-translation">
+              <p class="lng-card3 cardsText cardsText-translation">
                 надання до установ іноземних держав
               </p>
             </div>
@@ -266,7 +272,7 @@
                 src="./src/images/icon-breafcase.svg"
                 alt="ручний чемодан"
               />
-              <p class="cardsText cardsText-breafcase">оформлення на роботу</p>
+              <p class="lng-card4 cardsText cardsText-breafcase">оформлення на роботу</p>
             </div>
           </li>
           <li class="cardsItem">
@@ -276,7 +282,7 @@
                 src="./src/images/icon-weapon.svg"
                 alt="зброя"
               />
-              <p class="cardsText cardsText-weapon">
+              <p class="lng-card5 cardsText cardsText-weapon">
                 оформлення дозволу на придбання, зберігання та носіння зброї
               </p>
             </div>
@@ -288,7 +294,7 @@
                 src="./src/images/icon-paycard.svg"
                 alt="платіжна карта"
               />
-              <p class="cardsText cardsText-paycard">
+              <p class="lng-card6 cardsText cardsText-paycard">
                 оформлення участі у процедурі публічної закупівлі / спрощеної
                 публічної закупівлі
               </p>
@@ -301,7 +307,7 @@
                 src="./src/images/icon-passport.svg"
                 alt="паспорт"
               />
-              <p class="cardsText cardsText-passport">
+              <p class="lng-card7 cardsText cardsText-passport">
                 оформлення набуття громадянства
               </p>
             </div>
@@ -313,7 +319,7 @@
                 src="./src/images/icon-handsnake.svg"
                 alt="рукостискання"
               />
-              <p class="cardsText cardsText-handsnake">
+              <p class="lng-card8 cardsText cardsText-handsnake">
                 подання до територіального центру комплектування та соціальної
                 підтримки
               </p>
@@ -326,7 +332,7 @@
                 src="./src/images/icon-capitoly.svg"
                 alt="адмінбудівля"
               />
-              <p class="cardsText cardsText-capitoly">
+              <p class="lng-card9 cardsText cardsText-capitoly">
                 пред’явлення за місцем вимоги
               </p>
             </div>
@@ -337,7 +343,7 @@
       <section>
         <div class="container">
           <div class="footnote__wrap">
-            <p class="footnote__text">
+            <p class="lng-footnote1 footnote__text">
               Довідку можна отримати як онлайн, так і в паперовому вигляді, адже
               тільки такий варіант приймає більшість державних органів.
               Документи оформлює Міністерство внутрішніх справ для осіб, які
@@ -346,7 +352,7 @@
               дні - звертайтесь до наших професіоналів. Все, що від вас потрібно
               - це фото/ скан паспорту.
             </p>
-            <p class="footnote__text">
+            <p class="lng-footnote2 footnote__text">
               Ми проаналізуємо Ваші документи, допоможемо правильно обрати
               підставу оформлення довідки та швидко зробимо документ без вашої
               присутності.
@@ -359,7 +365,7 @@
         <div class="container">
           <div class="crmWrap">
             <div class="crmForm">
-              <h3 id="crmSection" class="crmFormTitle">
+              <h3 id="crmSection" class="lng-crmTitle crmFormTitle">
                 Для швидкого отримання довідки - звертайтесь до наших
                 спеціалістів!
               </h3>
@@ -394,11 +400,11 @@
       <section class="apostille">
         <div class="container">
           <div class="apostilleWrap">
-            <h2 id="apostilleSection" class="sectionTitle apostilleTitle">
+            <h2 id="apostilleSection" class="lng-apostilleTitle sectionTitle apostilleTitle">
               АПОСТИЛЬ ТА ЛЕГАЛІЗАЦІЯ ДОВІДКИ ПРО НЕСУДИМІСТЬ
             </h2>
             <div class="apostilleContent">
-              <h3 class="apostilleSubTitle">
+              <h3 class="lng-apostilleSubTitle apostilleSubTitle">
                 Ви плануєте виїжджати за кордон і вам потрібна довідка про
                 несудимість? Не забудьте подбати про її легалізацію. Будь-який
                 документ, який видається в Україні, повинен належним чином
@@ -421,7 +427,7 @@
                   />
                 </picture>
                 <div class="apostilleTextWrap">
-                  <p class="apostilleText">
+                  <p class="lng-apostilleText1 apostilleText">
                     Апостиль - це спеціальний штамп апостиляції, який
                     підтверджує дійсність підписів, штампів і самого документа.
                     Його потрібно проставляти на документи, якщо вам потрібно
@@ -432,14 +438,14 @@
                     всіх інших випадках довідка про несудимість має пройти
                     міністерську і консульську легалізацію.
                   </p>
-                  <p class="apostilleText">
+                  <p class="lng-apostilleText2 apostilleText">
                     Складно? Телефонуйте до наших юристів! Наша Команда допоможе
                     підібрати правильний варіант легалізації документа саме для
                     вашої ситуації.
                   </p>
                 </div>
               </div>
-              <p class="apostilleSubText">
+              <p class="lng-apostilleText3 apostilleSubText">
                 Не хочете втрачати свій час? Не проблема. Будь-яка процедура
                 може бути організована повністю дистанційно з пересиланням
                 документів поштою або за допомогою наших кур’єрів.
@@ -452,20 +458,20 @@
       <section class="additionalService">
         <div class="container">
           <div class="additionalServiseWrap">
-            <h2 id="additionalServices" class="additionalServiceTitle">
+            <h2 id="additionalServices" class="lng-additionalServiceTitle additionalServiceTitle">
               ДОДАТКОВІ ПОСЛУГИ
             </h2>
             <ul class="additionalServiceList">
               <li class="additionalServiceItem">
                 <div class="additionalServiceItemTop">
-                  <p class="additionalServiceItemTitle">ПЕРЕКЛАДИ</p>
+                  <p class="lng-addServTranslations additionalServiceItemTitle">ПЕРЕКЛАДИ</p>
                   <img
                     class="additionalServiceImageTranslation"
                     src="./src/images/serviceTranslations.png"
                     alt="переклад"
                   />
                 </div>
-                <p class="additionalServiceItemText">
+                <p class="lng-addServText1 additionalServiceItemText">
                   Наша компанія успішно поєднує в собі не тільки оформлення
                   документів, але й їх переклад з/на будь-яку мову світу. Ми
                   пропонуємо повний юридичний супровід при оформленні документів
@@ -475,13 +481,13 @@
                   світу.
                 </p>
                 <a class="additionalServiceButtonLink" href="#crmSection">
-                  <p class="additionalServiceButtonText">Замовити</p>
+                  <p class="lng-addServBtn1 additionalServiceButtonText">Замовити</p>
                 </a>
               </li>
               <li class="additionalServiceItem">
                 <div class="additionalServiceItemTop">
                   <p
-                    class="additionalServiceItemTitle additionalServiceItemTitleDelivery"
+                    class="lng-addServTDelivery additionalServiceItemTitle additionalServiceItemTitleDelivery"
                   >
                     МІЖНАРОДНА ДОСТАВКА
                   </p>
@@ -491,16 +497,15 @@
                     alt="міжнародна доставка"
                   />
                 </div>
-                <p class="additionalServiceItemText">
+                <p class="lng-addServText2 additionalServiceItemText">
                   Ми відправляємо документи не тільки по Україні, але і за її
                   межами.Терміни залежать від країни, в яку ми будемо
                   відправляти. Наша Команда обирає тільки надійні служби
                   доставки, аби ваші документи були в безпеці і ви їх отримали
                   на руки в найкращому вигляді та в потрібний час.
                 </p>
-
                 <a class="additionalServiceButtonLink" href="#crmSection">
-                  <p class="additionalServiceButtonText">Замовити</p>
+                  <p class="lng-addServBtn2 additionalServiceButtonText">Замовити</p>
                 </a>
               </li>
             </ul>
@@ -514,7 +519,7 @@
             <h3 class="sectionTitle sliderTeamTitle">
               КОМАНДА KOVAL LEGAL GROUP
             </h3>
-            <p class="sliderTeamText">
+            <p class="lng-sliderText sliderTeamText">
               Професіонали, які щоденно допомагають навіть <br />
               у безвихідних ситуаціях! <br />
               Ми – висококваліфіковані Юристи, які знають закони <br />
@@ -529,7 +534,7 @@
                 alt="Коваль Олег"
               />
               <p class="sliderTeamItemTitle">КОВАЛЬ ОЛЕГ</p>
-              <p class="sliderTeamItemText">
+              <p class="lng-slider1b sliderTeamItemText">
                 ВЛАСНИК КОМПАНІЇ <br />
                 КОVAL LEGAL GROUP
               </p>
@@ -540,8 +545,8 @@
                 src="./src/images/novikovaOlena.jpg"
                 alt="Новікова Олена"
               />
-              <p class="sliderTeamItemTitle">НОВІКОВА ОЛЕНА</p>
-              <p class="sliderTeamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
+              <p class="lng-slider2a sliderTeamItemTitle">НОВІКОВА ОЛЕНА</p>
+              <p class="lng-slider2b sliderTeamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
             </li>
             <li class="sliderTeamItem">
               <img
@@ -550,7 +555,7 @@
                 alt="Анна"
               />
               <p class="sliderTeamItemTitle">АННА</p>
-              <p class="sliderTeamItemText">
+              <p class="lng-slider3b sliderTeamItemText">
                 КЕРІВНИК КОМЕРЦІЙНОГО ДЕПАРТАМЕНТУ
               </p>
             </li>
@@ -561,7 +566,7 @@
                 alt="Марина"
               />
               <p class="sliderTeamItemTitle">МАРИНА</p>
-              <p class="sliderTeamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
+              <p class="lng-slider4b sliderTeamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
             </li>
           </ul>
         </div>
@@ -573,7 +578,7 @@
           <div class="teamWrap">
             <div class="teamTitleWrap">
               <h3 class="sectionTitle teamTitle">КОМАНДА KOVAL LEGAL GROUP</h3>
-              <p class="teamText">
+              <p class="lng-deskText teamText">
                 Професіонали, які щоденно допомагають навіть у безвихідних
                 ситуаціях!<br />
                 Ми – висококваліфіковані Юристи, які знають закони і блискуче
@@ -590,7 +595,7 @@
                   alt="Коваль Олег"
                 />
                 <p class="teamItemTitle">КОВАЛЬ ОЛЕГ</p>
-                <p class="teamItemText">
+                <p class="lng-desk1b teamItemText">
                   ВЛАСНИК КОМПАНІЇ <br />
                   КОVAL LEGAL GROUP
                 </p>
@@ -601,8 +606,8 @@
                   src="./src/images/novikovaOlena.jpg"
                   alt="Новікова Олена"
                 />
-                <p class="teamItemTitle">НОВІКОВА ОЛЕНА</p>
-                <p class="teamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
+                <p class="lng-desk2a teamItemTitle">НОВІКОВА ОЛЕНА</p>
+                <p class="lng-desk2b teamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
               </li>
               <li class="teamItem">
                 <img
@@ -611,7 +616,7 @@
                   alt="Анна"
                 />
                 <p class="teamItemTitle">АННА</p>
-                <p class="teamItemText">КЕРІВНИК КОМЕРЦІЙНОГО ДЕПАРТАМЕНТУ</p>
+                <p class="lng-desk3b teamItemText">КЕРІВНИК КОМЕРЦІЙНОГО ДЕПАРТАМЕНТУ</p>
               </li>
               <li class="teamItem">
                 <img
@@ -620,7 +625,7 @@
                   alt="Марина"
                 />
                 <p class="teamItemTitle">МАРИНА</p>
-                <p class="teamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
+                <p class="lng-desk4b teamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
               </li>
             </ul>
           </div>
@@ -629,7 +634,7 @@
     </main>
     <!--*--*--*--*--*-- FOOTER --*--*--*--*--*-->
     <footer>
-      <h4 class="footerTitle">НАШІ КОНТАКТИ</h4>
+      <h4 class="lng-footerTitle footerTitle">НАШІ КОНТАКТИ</h4>
       <div class="footerBackground">
         <div class="container footerContent">
           <img
@@ -638,10 +643,10 @@
             alt="логотип компанії"
           />
           <div class="footerContentText">
-            <p class="footerText">
+            <p class="lng-footerText footerText">
               З Любов`ю до Справи, <br />
               з Повагою до Вас!
-            </p>            
+            </p>
           </div>
           <ul class="footerContacts">
             <li class="footerContactsItem">
@@ -654,7 +659,7 @@
                   height="51"
                 />
                 <div class="footerContectsText">
-                  <p class="contactsText">Є запитання?</p>
+                  <p class="lng-menuFooterAnyQ contactsText">Є запитання?</p>
                   <p class="contactsContent">+38(098) 138-39-79</p>
                 </div>
               </a>
@@ -669,7 +674,7 @@
                   height="41"
                 />
                 <div class="footerContectsText">
-                  <p class="contactsText">Пошта</p>
+                  <p class="lng-footerEmail contactsText">Пошта</p>
                   <p class="contactsContent">callcenter.via.klg@gmail.com</p>
                 </div>
               </a>
@@ -684,8 +689,8 @@
                   height="48"
                 />
                 <div class="footerContectsText">
-                  <p class="contactsText">Адреса</p>
-                  <p class="contactsContent">Київ, Ковпака, 17</p>
+                  <p class="lng-footerAdressTitle contactsText">Адреса</p>
+                  <p class="lng-footerAdress contactsContent">Київ, Ковпака, 17</p>
                 </div>
               </div>
             </li>
@@ -722,19 +727,21 @@
         );
       </script> -->
     </div>
+    <script src="./src/js/lang.js"></script>
+    <script src="./src/js/localization.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script>
       var slider = tns({
-            container: ".my-slider",
-            items: 1,
-            slideBy: 1,
-            autoplay: true,
-            speed: 300,
-            mode: "gallery",
-            nav: false,
-            controls: false,
-            autoplayButtonOutput: false,
-          });
+        container: ".my-slider",
+        items: 1,
+        slideBy: 1,
+        autoplay: true,
+        speed: 300,
+        mode: "gallery",
+        nav: false,
+        controls: false,
+        autoplayButtonOutput: false,
+      });
     </script>
   </body>
 </html>
