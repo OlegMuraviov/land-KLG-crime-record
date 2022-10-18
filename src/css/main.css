@@ -165,6 +165,29 @@ body {
   }
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-right: 28px;
+  margin-left: auto;
+  padding-bottom: 7px;
+  width: 241px;
+  text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .contacts {
+    width: 680px;
+    margin-right: 140px;
+  }
+}
+
 .contactsImage {
   margin: 0 auto;
 }
