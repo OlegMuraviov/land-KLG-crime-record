@@ -1,0 +1,25 @@
+{
+  "name": "lending-klg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegMuraviov/lending-KLG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegMuraviov/lending-KLG/issues"
+  },
+  "homepage": "https://github.com/OlegMuraviov/lending-KLG#readme",
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
+  }
+}
