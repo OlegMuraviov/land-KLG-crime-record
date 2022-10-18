@@ -17,6 +17,16 @@
   }
 }
 
+.heroText {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
 .languageImage {
   width: 28px;
   height: 16px;
@@ -86,7 +96,7 @@
   position: absolute;
   left: 50%;
   bottom: -50%;
-  transform: translate(-50%,65%);
+  transform: translate(-50%, 65%);
   @media screen and (min-width: 1600px) {
     bottom: 0;
     display: flex;
@@ -142,7 +152,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1600px) {
     display: block;
   }
 }
