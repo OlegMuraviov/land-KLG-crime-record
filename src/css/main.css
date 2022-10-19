@@ -524,6 +524,14 @@ body {
           transform: rotate(-405deg);
 }
 
+#selectMobile {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
 .linksText {
   font-family: "Helvetica Neue";
   font-weight: 400;
@@ -827,6 +835,15 @@ body {
     font-size: 23px;
     line-height: 28px;
   }
+}
+
+#selectDesktop {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 
 .footerTitle {
