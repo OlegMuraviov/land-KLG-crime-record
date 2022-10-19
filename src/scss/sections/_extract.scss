@@ -23,20 +23,20 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 12px;
-  height: 169px;
   border: 10px solid #372306;
-  background-image: url("../images/certificateMobile.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   @media screen and (min-width: 1600px) {
     margin-right: 60px;
     margin-bottom: 0;
     width: 678px;
     height: 543px;
     border: 19px solid #372306;
-    background-image: url("../images/certificateDesktop.jpg");
   }
+}
+
+.extractImage{
+  display: block;
+  margin: 0 auto;
+object-fit: cover;
 }
 
 .extractDescription {
