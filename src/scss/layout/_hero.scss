@@ -1,22 +1,42 @@
+.heroContentBgc {
+  background: var(--brand-color); 
+  margin-bottom: 440px;
+  @media screen and (min-width: 1600px){
+    margin-bottom: 0;
+    background: var(--brand-color); 
+  }
+}
+
+.heroContent{
+  position: relative;
+}
+
 .hero {
   @media screen and (min-width: 1600px) {
     display: block;
+    margin: 0 auto;
     margin-bottom: 150px;
-    width: 1560px;
+    width: 1600px;
   }
+}
+
+.heroMenuBgc{
+  background: var(--brand-color); 
 }
 
 .heroMenu {
   display: none;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1600px) {    
     display: flex;
     justify-content: space-between;
-    padding: 32px 60px 32px 32px;
+    align-items: center;
+    padding: 0 60px;
     background-color: #fff;
   }
 }
 
 .heroText {
+  padding: 35px 0;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
@@ -25,6 +45,7 @@
 
   color: #000000;
 }
+
 
 .languageImage {
   width: 28px;
@@ -39,15 +60,18 @@
   position: relative;
   display: block;
   width: 100%;
-  background: var(--brand-color);
 }
 
 .heroImage {
   margin: 0 auto;
-  padding: 0 15px;
   min-width: 290px;
   width: 100%;
   max-width: 678px;
+  @media screen and (min-width: 1600px){
+    max-width: none;
+    width: 1560px;
+    margin: 0;
+  }
   
 }
 
@@ -65,10 +89,14 @@
   color: var(--additional-text-color);
   text-align: center;
   @media screen and (min-width: 1600px) {
+    top: 145px;
+    left: 65px;
+    transform: translate(0, 0);
     margin-bottom: 57px;
     font-size: 50px;
     line-height: 60px;
     color: var(--additional-text-color);
+    text-align: start;
   }
 }
 
@@ -82,6 +110,9 @@
   background-color: #fff;
   text-align: center;
   @media screen and (min-width: 1600px) {
+    top: 320px;
+    left: 65px;
+    transform: translate(0, 0);
     width: 510px;
   }
 }
@@ -102,17 +133,29 @@
 }
 
 .heroCardListWrap {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 1600px){
+    position: absolute;
+    top: unset;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+  }
 }
 
 .heroCardsList {
   position: relative;
   z-index: 5;
-  margin-top: -25px;
+  margin-top: -20px;
   margin-bottom: 30px;
   @media screen and (min-width: 1600px) {
     display: flex;
+    margin: 0;
   }
 }
 
@@ -120,7 +163,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
   width: 266px;
   height: 137px;
   background-color: #d0ae90;
@@ -136,6 +178,10 @@
     height: 186px;
     &:not(:last-child) {
       margin-right: 104px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }

@@ -361,7 +361,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-left: -20px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -539,12 +539,32 @@ body {
   }
 }
 
+.heroContentBgc {
+  background: var(--brand-color);
+  margin-bottom: 440px;
+}
+@media screen and (min-width: 1600px) {
+  .heroContentBgc {
+    margin-bottom: 0;
+    background: var(--brand-color);
+  }
+}
+
+.heroContent {
+  position: relative;
+}
+
 @media screen and (min-width: 1600px) {
   .hero {
     display: block;
+    margin: 0 auto;
     margin-bottom: 150px;
-    width: 1560px;
+    width: 1600px;
   }
+}
+
+.heroMenuBgc {
+  background: var(--brand-color);
 }
 
 .heroMenu {
@@ -558,12 +578,16 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 32px 60px 32px 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 60px;
     background-color: #fff;
   }
 }
 
 .heroText {
+  padding: 35px 0;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
@@ -587,15 +611,20 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  background: var(--brand-color);
 }
 
 .heroImage {
   margin: 0 auto;
-  padding: 0 15px;
   min-width: 290px;
   width: 100%;
   max-width: 678px;
+}
+@media screen and (min-width: 1600px) {
+  .heroImage {
+    max-width: none;
+    width: 1560px;
+    margin: 0;
+  }
 }
 
 .heroSlogan {
@@ -615,10 +644,15 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .heroSlogan {
+    top: 145px;
+    left: 65px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     margin-bottom: 57px;
     font-size: 50px;
     line-height: 60px;
     color: var(--additional-text-color);
+    text-align: start;
   }
 }
 
@@ -635,6 +669,10 @@ body {
 }
 @media screen and (min-width: 1600px) {
   .heroButtonWrap {
+    top: 320px;
+    left: 65px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     width: 510px;
   }
 }
@@ -657,6 +695,11 @@ body {
 }
 
 .heroCardListWrap {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,11 +707,21 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1600px) {
+  .heroCardListWrap {
+    position: absolute;
+    top: unset;
+    left: 50%;
+    bottom: -90px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
 
 .heroCardsList {
   position: relative;
   z-index: 5;
-  margin-top: -25px;
+  margin-top: -20px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1600px) {
@@ -676,6 +729,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
 }
 
@@ -689,7 +743,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 5px;
   width: 266px;
   height: 137px;
   background-color: #d0ae90;
@@ -706,6 +759,9 @@ body {
   }
   .heroCardsItem:not(:last-child) {
     margin-right: 104px;
+  }
+  .heroCardsItem:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
