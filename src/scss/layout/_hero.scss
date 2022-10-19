@@ -1,5 +1,4 @@
 .hero {
-  margin-bottom: 437px;
   @media screen and (min-width: 1600px) {
     display: block;
     margin-bottom: 150px;
@@ -36,29 +35,35 @@
   }
 }
 
-.heroContent {
+.heroImageWrap{
   position: relative;
-  width: 390px;
-  height: 239px;
-  padding: 40px 20px 57px 20px;
-  background-image: url(../images/heroImageMobile.jpg);
-  background-size: cover;
-  @media screen and (min-width: 1600px) {
-    display: block;
-    padding: 145px 66px;
-    width: 1560px;
-    height: 590px;
-    background-image: url(../images/heroImageDesktop.jpg);
-  }
+  display: block;
+  width: 100%;
+  background: var(--brand-color);
+}
+
+.heroImage {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 290px;
+  width: 100%;
+  max-width: 678px;
+  
 }
 
 .heroSlogan {
-  margin-bottom: 27px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  min-width: 270px;
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 25px;
   line-height: 30px;
   color: var(--additional-text-color);
+  text-align: center;
   @media screen and (min-width: 1600px) {
     margin-bottom: 57px;
     font-size: 50px;
@@ -68,6 +73,10 @@
 }
 
 .heroButtonWrap {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -70%);
   width: 198px;
   border-radius: 29px;
   background-color: #fff;
@@ -78,7 +87,7 @@
 }
 
 .heroButtonText {
-  padding: 2px 38px;
+  padding: 2px 40px;
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 19px;
@@ -92,13 +101,17 @@
   }
 }
 
+.heroCardListWrap {
+  display: flex;
+  justify-content: center;
+}
+
 .heroCardsList {
-  position: absolute;
-  left: 50%;
-  bottom: -50%;
-  transform: translate(-50%, 65%);
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
+  margin-bottom: 30px;
   @media screen and (min-width: 1600px) {
-    bottom: 0;
     display: flex;
   }
 }

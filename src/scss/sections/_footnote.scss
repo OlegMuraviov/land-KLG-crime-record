@@ -1,5 +1,5 @@
-.footnote__wrap {
-  padding: 20px 39px;
+.footnoteWrap {
+  padding: 20px 40px;
   background-color: var(--brand-color);
 
   @media screen and (min-width: 1600px) {
@@ -7,7 +7,7 @@
   }
 }
 
-.footnote__text {
+.footnoteText {
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 15px;
@@ -19,7 +19,7 @@
     line-height: 43px;
   }
 }
-.footnote__text:not(:last-child) {
+.footnoteText:not(:last-child) {
   margin-bottom: 25px;
   @media screen and (min-width: 1600px) {
     margin-bottom: 50px;

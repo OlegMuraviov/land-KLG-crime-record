@@ -10,8 +10,14 @@ body {
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 420px;
-  //content 390px
+  min-width: 320px;
+  width: 100%;
+  //min-content 390px
+  //content 100% - 30px
+  @media screen and (min-width: 678px){
+    width: 678px;
+    // content 648px
+  }
   @media screen and (min-width: 1600px) {
     width: 1600px;
     padding-left: 20px;

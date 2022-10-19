@@ -6,8 +6,8 @@
 }
 
 .apostilleWrap {
-  padding-left: 28px;
-  padding-right: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
   @media screen and (min-width: 1600px){
     padding: 0;
   }
@@ -30,7 +30,7 @@
 }
 
 .apostilleSubTitle {
-  padding: 10px 13px 9px 9px;
+  padding: 10px;
   font-family: "Helvetica Neue";  
   font-weight: 400;
   font-size: 11px;
@@ -38,7 +38,7 @@
   text-align: center;
 
   @media screen and (min-width: 1600px) {
-    padding: 38px 26px 34px 31px;
+    padding: 30px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -54,9 +54,9 @@
 }
 
 .apostilleTextWrap {
-  padding: 13px 19px 20px 15px;
+  padding: 15px;
   @media screen and (min-width: 1600px) {
-    padding: 34px 25px 40px 31px;
+    padding: 40px 30px;
   }
 }
 

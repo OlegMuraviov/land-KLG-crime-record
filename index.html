@@ -21,138 +21,163 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <!--*--*--*--*--*-- BURGER --*--*--*--*--*-->
-        <div class="mobileMenu">
-          <div class="top-nav">
+      <div class="bgHeaderTop">
+        <div class="container">
+          <!--*--*--*--*--*-- BURGER --*--*--*--*--*-->
+          <div class="mobileMenu">
+            <div class="top-nav">
+              <a href="index.html">
+                <img
+                  class="burgerLogo"
+                  src="./src/images/logo.png"
+                  alt="логотип компанії"
+                />
+              </a>
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+              </label>
+              <ul class="menu">
+                <li>
+                  <a href="#extractSection"
+                    ><p class="lng-menuBurgerExtract linksText">
+                      Витяг про несудимість
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#apostilleSection"
+                    ><p class="lng-menuBurgerApostille linksText">
+                      Апостиль та легалізація витягу
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#additionalServices"
+                    ><p class="lng-menuBurgerSend linksText">
+                      Відправка документів закордон
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#crmSection"
+                    ><p class="lng-menuBurgerHowUse linksText">
+                      Як замовити?
+                    </p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="desktopMenu">
             <a href="index.html">
               <img
-                class="burgerLogo"
+                class="desktopLogo"
                 src="./src/images/logo.png"
                 alt="логотип компанії"
-              />
-            </a>
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-button-container" for="menu-toggle">
-              <div class="menu-button"></div>
-            </label>
-
-            <ul class="menu">
+            /></a>
+            <ul class="contacts">
               <li>
-                <a href="#extractSection"
-                  ><p class="lng-menuBurgerExtract linksText">
-                    Витяг про несудимість
-                  </p></a
+                <a href="tel:+380981383979"
+                  ><img
+                    class="contactsImage contactsImage1"
+                    src="./src/images/icon-phone.svg"
+                    alt="іконка телефона"
+                  />
+                  <p class="lng-menuHeaderAnyQ contactsText">Є запитання?</p>
+                  <p class="contactsContent">+38(098) 138-39-79</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:callcenter.via.klg@gmail.com"
+                  ><img
+                    class="contactsImage contactsImage2"
+                    src="./src/images/icon-envelope.svg"
+                    alt="іконка конверта"
+                  />
+                  <p class="lng-headerEmail contactsText">Пошта</p>
+                  <p class="contactsContent">callcenter.via.klg@gmail.com</p></a
                 >
               </li>
               <li>
-                <a href="#apostilleSection"
-                  ><p class="lng-menuBurgerApostille linksText">Апостиль та легалізація витягу</p></a
-                >
-              </li>
-              <li>
-                <a href="#additionalServices"
-                  ><p class="lng-menuBurgerSend linksText">Відправка документів закордон</p></a
-                >
-              </li>
-              <li>
-                <a href="#crmSection"><p class="lng-menuBurgerHowUse linksText">Як замовити?</p></a>
-              </li>
-              <!-- <li>
                 <img
-                  class="languageImage"
-                  src="./src/images/language.jpg"
-                  alt="українська мова"
+                  class="contactsImage contactsImage3"
+                  src="./src/images/icon-map.svg"
+                  alt="іконка мапи"
                 />
-              </li> -->
+                <p class="lng-headerAdressTitle contactsText">Адреса</p>
+                <p class="lng-headerAdress contactsContent">
+                  Київ, Ковпака, 17
+                </p>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="desktopMenu">
-          <a href="index.html">
+      </div>
+      <!--*--*--*--*--*-- HERO --*--*--*--*--*-->
+      <div class="hero">
+        <ul class="heroMenu">
+          <li>
+            <a href="#extractSection"
+              ><p class="lng-menuHeroExtract heroText">
+                Витяг про несудимість
+              </p></a
+            >
+          </li>
+          <li>
+            <a href="#apostilleSection"
+              ><p class="lng-menuHeroApostille heroText">
+                Апостиль та легалізація витягу
+              </p></a
+            >
+          </li>
+          <li>
+            <a href="#additionalServices"
+              ><p class="lng-menuHeroSend heroText">
+                Відправка документів закордон
+              </p></a
+            >
+          </li>
+          <li>
+            <a href="#crmSection"
+              ><p class="lng-menuHeroHowUse heroText">Як замовити?</p></a
+            >
+          </li>
+          <li>
+            <select class="changeLang">
+              <option value="uk" selected>UA</option>
+              <option value="ru">RU</option>
+            </select>
+          </li>
+        </ul>
+        <div class="heroContent">
+          <picture class="heroImageWrap">
+            <source
+              media="(max-width: 1559px)"
+              srcset="./src/images/heroImageMobile.jpg"
+            />
+            <source
+              media="(min-width: 1600px)"
+              srcset="./src/images/heroImageDesktop.jpg"
+            />
             <img
-              class="desktopLogo"
-              src="./src/images/logo.png"
-              alt="логотип компанії"
-          /></a>
-          <ul class="contacts">
-            <li>
-              <a href="tel:+380981383979"
-                ><img
-                  class="contactsImage contactsImage1"
-                  src="./src/images/icon-phone.svg"
-                  alt="іконка телефона"
-                />
-                <p class="lng-menuHeaderAnyQ contactsText">Є запитання?</p>
-                <p class="contactsContent">+38(098) 138-39-79</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:callcenter.via.klg@gmail.com"
-                ><img
-                  class="contactsImage contactsImage2"
-                  src="./src/images/icon-envelope.svg"
-                  alt="іконка конверта"
-                />
-                <p class="lng-headerEmail contactsText">Пошта</p>
-                <p class="contactsContent">callcenter.via.klg@gmail.com</p></a
-              >
-            </li>
-            <li>
-              <img
-                class="contactsImage contactsImage3"
-                src="./src/images/icon-map.svg"
-                alt="іконка мапи"
-              />
-              <p class="lng-headerAdressTitle contactsText">Адреса</p>
-              <p class="lng-headerAdress contactsContent">Київ, Ковпака, 17</p>
-            </li>
-          </ul>
-        </div>
-        <!--*--*--*--*--*-- HERO --*--*--*--*--*-->
-        <div class="hero">
-          <ul class="heroMenu">
-            <li>
-              <a href="#extractSection"
-                ><p class="lng-menuHeroExtract heroText">Витяг про несудимість</p></a
-              >
-            </li>
-            <li>
-              <a href="#apostilleSection"
-                ><p class="lng-menuHeroApostille heroText">Апостиль та легалізація витягу</p></a
-              >
-            </li>
-            <li>
-              <a href="#additionalServices"
-                ><p class="lng-menuHeroSend heroText">Відправка документів закордон</p></a
-              >
-            </li>
-            <li>
-              <a href="#crmSection"><p class="lng-menuHeroHowUse heroText">Як замовити?</p></a>
-            </li>
-            <li>
-              <select class="changeLang">
-                <option value="uk" selected>UA</option>
-                <option value="ru">RU</option>
-                <!-- <img 
-                class="languageImage"
-                src="./src/images/language.jpg"
-                alt="українська мова"
-              /> -->
-              </select>
-            </li>
-          </ul>
-          <div class="heroContent">
+              class="heroImage"
+              src="./src/images/heroImageMobile.jpg"
+              alt="рукостискання"
+            />
             <p class="lng-heroSlogan heroSlogan">
               Ми - Відповідь на Ваші <br />
               запитання!
             </p>
             <div class="heroButtonWrap">
               <a href="#crmSection" class="heroButton">
-                <p class="lng-heroButtonText heroButtonText">Безкоштовна консультація</p>
+                <p class="lng-heroButtonText heroButtonText">
+                  Безкоштовна консультація
+                </p>
               </a>
             </div>
-
+          </picture>
+          <div class="container heroCardListWrap">
             <ul class="heroCardsList">
               <li class="heroCardsItem">
                 <img
@@ -162,7 +187,9 @@
                 />
                 <div class="heroCardDescription">
                   <p class="lng-twelveYears heroCardTitle">12 років</p>
-                  <p class="lng-heroExpirience heroCardText">досвіду у сфері документообігу</p>
+                  <p class="lng-heroExpirience heroCardText">
+                    досвіду у сфері документообігу
+                  </p>
                 </div>
               </li>
               <li class="heroCardsItem">
@@ -172,7 +199,9 @@
                   alt="документи"
                 />
                 <div class="heroCardDescription">
-                  <p class="lng-heroCountDocs heroCardTitle">65000 документів</p>
+                  <p class="lng-heroCountDocs heroCardTitle">
+                    65000 документів
+                  </p>
                   <p class="lng-heroFastAndPositive heroCardText">
                     успішно отримані зі швидким результатом
                   </p>
@@ -201,7 +230,10 @@
 
       <section class="extract">
         <div class="container">
-          <h1 id="extractSection" class="lng-extractTitle sectionTitle extractTitle">
+          <h1
+            id="extractSection"
+            class="lng-extractTitle sectionTitle extractTitle"
+          >
             ВИТЯГ ПРО ВІДСУТНІСТЬ СУДИМОСТІ
           </h1>
           <div class="extractContent">
@@ -272,7 +304,9 @@
                 src="./src/images/icon-breafcase.svg"
                 alt="ручний чемодан"
               />
-              <p class="lng-card4 cardsText cardsText-breafcase">оформлення на роботу</p>
+              <p class="lng-card4 cardsText cardsText-breafcase">
+                оформлення на роботу
+              </p>
             </div>
           </li>
           <li class="cardsItem">
@@ -342,8 +376,8 @@
       <!--*--*--*--*--*-- FOOTNOTE --*--*--*--*--*-->
       <section>
         <div class="container">
-          <div class="footnote__wrap">
-            <p class="lng-footnote1 footnote__text">
+          <div class="footnoteWrap">
+            <p class="lng-footnote1 footnoteText">
               Довідку можна отримати як онлайн, так і в паперовому вигляді, адже
               тільки такий варіант приймає більшість державних органів.
               Документи оформлює Міністерство внутрішніх справ для осіб, які
@@ -352,7 +386,7 @@
               дні - звертайтесь до наших професіоналів. Все, що від вас потрібно
               - це фото/ скан паспорту.
             </p>
-            <p class="lng-footnote2 footnote__text">
+            <p class="lng-footnote2 footnoteText">
               Ми проаналізуємо Ваші документи, допоможемо правильно обрати
               підставу оформлення довідки та швидко зробимо документ без вашої
               присутності.
@@ -400,7 +434,10 @@
       <section class="apostille">
         <div class="container">
           <div class="apostilleWrap">
-            <h2 id="apostilleSection" class="lng-apostilleTitle sectionTitle apostilleTitle">
+            <h2
+              id="apostilleSection"
+              class="lng-apostilleTitle sectionTitle apostilleTitle"
+            >
               АПОСТИЛЬ ТА ЛЕГАЛІЗАЦІЯ ДОВІДКИ ПРО НЕСУДИМІСТЬ
             </h2>
             <div class="apostilleContent">
@@ -458,13 +495,18 @@
       <section class="additionalService">
         <div class="container">
           <div class="additionalServiseWrap">
-            <h2 id="additionalServices" class="lng-additionalServiceTitle additionalServiceTitle">
+            <h2
+              id="additionalServices"
+              class="lng-additionalServiceTitle additionalServiceTitle"
+            >
               ДОДАТКОВІ ПОСЛУГИ
             </h2>
             <ul class="additionalServiceList">
               <li class="additionalServiceItem">
                 <div class="additionalServiceItemTop">
-                  <p class="lng-addServTranslations additionalServiceItemTitle">ПЕРЕКЛАДИ</p>
+                  <p class="lng-addServTranslations additionalServiceItemTitle">
+                    ПЕРЕКЛАДИ
+                  </p>
                   <img
                     class="additionalServiceImageTranslation"
                     src="./src/images/serviceTranslations.png"
@@ -481,7 +523,9 @@
                   світу.
                 </p>
                 <a class="additionalServiceButtonLink" href="#crmSection">
-                  <p class="lng-addServBtn1 additionalServiceButtonText">Замовити</p>
+                  <p class="lng-addServBtn1 additionalServiceButtonText">
+                    Замовити
+                  </p>
                 </a>
               </li>
               <li class="additionalServiceItem">
@@ -505,7 +549,9 @@
                   на руки в найкращому вигляді та в потрібний час.
                 </p>
                 <a class="additionalServiceButtonLink" href="#crmSection">
-                  <p class="lng-addServBtn2 additionalServiceButtonText">Замовити</p>
+                  <p class="lng-addServBtn2 additionalServiceButtonText">
+                    Замовити
+                  </p>
                 </a>
               </li>
             </ul>
@@ -546,7 +592,9 @@
                 alt="Новікова Олена"
               />
               <p class="lng-slider2a sliderTeamItemTitle">НОВІКОВА ОЛЕНА</p>
-              <p class="lng-slider2b sliderTeamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
+              <p class="lng-slider2b sliderTeamItemText">
+                ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ
+              </p>
             </li>
             <li class="sliderTeamItem">
               <img
@@ -566,7 +614,9 @@
                 alt="Марина"
               />
               <p class="sliderTeamItemTitle">МАРИНА</p>
-              <p class="lng-slider4b sliderTeamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
+              <p class="lng-slider4b sliderTeamItemText">
+                КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ
+              </p>
             </li>
           </ul>
         </div>
@@ -607,7 +657,9 @@
                   alt="Новікова Олена"
                 />
                 <p class="lng-desk2a teamItemTitle">НОВІКОВА ОЛЕНА</p>
-                <p class="lng-desk2b teamItemText">ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ</p>
+                <p class="lng-desk2b teamItemText">
+                  ДИРЕКТОР ПО ТЕХНІЧНИМ НАПРЯМАМ
+                </p>
               </li>
               <li class="teamItem">
                 <img
@@ -616,7 +668,9 @@
                   alt="Анна"
                 />
                 <p class="teamItemTitle">АННА</p>
-                <p class="lng-desk3b teamItemText">КЕРІВНИК КОМЕРЦІЙНОГО ДЕПАРТАМЕНТУ</p>
+                <p class="lng-desk3b teamItemText">
+                  КЕРІВНИК КОМЕРЦІЙНОГО ДЕПАРТАМЕНТУ
+                </p>
               </li>
               <li class="teamItem">
                 <img
@@ -625,7 +679,9 @@
                   alt="Марина"
                 />
                 <p class="teamItemTitle">МАРИНА</p>
-                <p class="lng-desk4b teamItemText">КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ</p>
+                <p class="lng-desk4b teamItemText">
+                  КЕРІВНИК ЮРИДИЧНОГО ДЕПАРТАМЕНТУ
+                </p>
               </li>
             </ul>
           </div>
@@ -634,7 +690,10 @@
     </main>
     <!--*--*--*--*--*-- FOOTER --*--*--*--*--*-->
     <footer>
-      <h4 class="lng-footerTitle footerTitle">НАШІ КОНТАКТИ</h4>
+      <div class="container">
+        <h4 class="lng-footerTitle footerTitle">НАШІ КОНТАКТИ</h4>
+      </div>
+
       <div class="footerBackground">
         <div class="container footerContent">
           <img
@@ -690,7 +749,9 @@
                 />
                 <div class="footerContectsText">
                   <p class="lng-footerAdressTitle contactsText">Адреса</p>
-                  <p class="lng-footerAdress contactsContent">Київ, Ковпака, 17</p>
+                  <p class="lng-footerAdress contactsContent">
+                    Київ, Ковпака, 17
+                  </p>
                 </div>
               </div>
             </li>
@@ -700,7 +761,7 @@
     </footer>
     <!--*--*--*--*--*-- CALLBACK --*--*--*--*--*-->
     <div class="callBack">
-      <script type="text/javascript">
+      <!-- <script type="text/javascript">
         (function (d, w, s) {
           var widgetHash = "noaae5ozshnv2loap9ox",
             gcw = d.createElement(s);
@@ -711,9 +772,9 @@
           var sn = d.getElementsByTagName(s)[0];
           sn.parentNode.insertBefore(gcw, sn);
         })(document, window, "script");
-      </script>
+      </script> -->
       <!--*--*--*--*--*-- WIDGET --*--*--*--*--*-->
-      <script>
+      <!-- <script>
         (function (w, d, u) {
           var s = d.createElement("script");
           s.async = true;
@@ -725,7 +786,7 @@
           document,
           "https://cdn.bitrix24.ua/b1527935/crm/site_button/loader_20_0bhx7t.js"
         );
-      </script>
+      </script> -->
     </div>
     <script src="./src/js/lang.js"></script>
     <script src="./src/js/localization.js"></script>

@@ -133,7 +133,13 @@ body {
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 420px;
+  min-width: 320px;
+  width: 100%;
+}
+@media screen and (min-width: 678px) {
+  .container {
+    width: 678px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .container {
@@ -163,21 +169,6 @@ body {
   .desktopLogo {
     display: block;
   }
-}
-
-.langUA {
-  position: relative;
-}
-
-.langUA::before {
-  content: "bla";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 55px;
-  height: 38px;
-  background-image: url("../images/language.jpg");
 }
 
 .contacts {
@@ -292,9 +283,8 @@ body {
 
 .sliderWrap {
   margin: 0 auto;
-  padding-left: 38px;
-  padding-right: 39px;
-  padding-bottom: 30px;
+  padding: 0 40px 30px 40px;
+  max-width: 400px;
 }
 @media screen and (min-width: 1600px) {
   .sliderWrap {
@@ -349,12 +339,12 @@ body {
   color: var(--additional-text-color);
 }
 
-header {
+.bgHeaderTop {
   padding-top: 5px;
   background-color: var(--brand-color);
 }
 @media screen and (min-width: 1600px) {
-  header {
+  .bgHeaderTop {
     padding-top: 20px;
   }
 }
@@ -398,7 +388,6 @@ header {
           justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 12px;
-  width: 350px;
   height: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -550,9 +539,6 @@ header {
   }
 }
 
-.hero {
-  margin-bottom: 437px;
-}
 @media screen and (min-width: 1600px) {
   .hero {
     display: block;
@@ -597,31 +583,35 @@ header {
   }
 }
 
-.heroContent {
+.heroImageWrap {
   position: relative;
-  width: 390px;
-  height: 239px;
-  padding: 40px 20px 57px 20px;
-  background-image: url(../images/heroImageMobile.jpg);
-  background-size: cover;
+  display: block;
+  width: 100%;
+  background: var(--brand-color);
 }
-@media screen and (min-width: 1600px) {
-  .heroContent {
-    display: block;
-    padding: 145px 66px;
-    width: 1560px;
-    height: 590px;
-    background-image: url(../images/heroImageDesktop.jpg);
-  }
+
+.heroImage {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 290px;
+  width: 100%;
+  max-width: 678px;
 }
 
 .heroSlogan {
-  margin-bottom: 27px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -85%);
+          transform: translate(-50%, -85%);
+  min-width: 270px;
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 25px;
   line-height: 30px;
   color: var(--additional-text-color);
+  text-align: center;
 }
 @media screen and (min-width: 1600px) {
   .heroSlogan {
@@ -633,6 +623,11 @@ header {
 }
 
 .heroButtonWrap {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
   width: 198px;
   border-radius: 29px;
   background-color: #fff;
@@ -645,7 +640,7 @@ header {
 }
 
 .heroButtonText {
-  padding: 2px 38px;
+  padding: 2px 40px;
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 19px;
@@ -661,16 +656,23 @@ header {
   }
 }
 
+.heroCardListWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .heroCardsList {
-  position: absolute;
-  left: 50%;
-  bottom: -50%;
-  -webkit-transform: translate(-50%, 65%);
-          transform: translate(-50%, 65%);
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1600px) {
   .heroCardsList {
-    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -965,11 +967,12 @@ header {
   display: block;
   margin: 0 auto;
   margin-bottom: 12px;
-  width: 385px;
   height: 169px;
   border: 10px solid #372306;
   background-image: url("../images/certificateMobile.jpg");
-  block-size: "contain";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (min-width: 1600px) {
   .extractImageWrap {
@@ -984,7 +987,6 @@ header {
 
 .extractDescription {
   margin: 0 auto;
-  width: 299px;
   text-align: center;
 }
 @media screen and (min-width: 1600px) {
@@ -1061,7 +1063,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
+  width: calc(50% - 15px);
   height: 115px;
   border: 3px solid #b68151;
   border-radius: 20px;
@@ -1249,17 +1251,17 @@ header {
   }
 }
 
-.footnote__wrap {
-  padding: 20px 39px;
+.footnoteWrap {
+  padding: 20px 40px;
   background-color: var(--brand-color);
 }
 @media screen and (min-width: 1600px) {
-  .footnote__wrap {
+  .footnoteWrap {
     padding: 20px 60px 35px 60px;
   }
 }
 
-.footnote__text {
+.footnoteText {
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 15px;
@@ -1268,23 +1270,23 @@ header {
   color: var(--additional-text-color);
 }
 @media screen and (min-width: 1600px) {
-  .footnote__text {
+  .footnoteText {
     font-size: 35px;
     line-height: 43px;
   }
 }
 
-.footnote__text:not(:last-child) {
+.footnoteText:not(:last-child) {
   margin-bottom: 25px;
 }
 @media screen and (min-width: 1600px) {
-  .footnote__text:not(:last-child) {
+  .footnoteText:not(:last-child) {
     margin-bottom: 50px;
   }
 }
 
 .crmWrap {
-  padding: 29px 31px 33px 32px;
+  padding: 30px;
 }
 @media screen and (min-width: 1600px) {
   .crmWrap {
@@ -1340,8 +1342,8 @@ header {
 }
 
 .apostilleWrap {
-  padding-left: 28px;
-  padding-right: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 @media screen and (min-width: 1600px) {
   .apostilleWrap {
@@ -1371,7 +1373,7 @@ header {
 }
 
 .apostilleSubTitle {
-  padding: 10px 13px 9px 9px;
+  padding: 10px;
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-size: 11px;
@@ -1380,7 +1382,7 @@ header {
 }
 @media screen and (min-width: 1600px) {
   .apostilleSubTitle {
-    padding: 38px 26px 34px 31px;
+    padding: 30px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -1403,11 +1405,11 @@ header {
 }
 
 .apostilleTextWrap {
-  padding: 13px 19px 20px 15px;
+  padding: 15px;
 }
 @media screen and (min-width: 1600px) {
   .apostilleTextWrap {
-    padding: 34px 25px 40px 31px;
+    padding: 40px 30px;
   }
 }
 
@@ -1542,7 +1544,7 @@ header {
 .additionalServiceItem {
   position: relative;
   padding: 6px 10px 45px 15px;
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   background-color: rgba(55, 37, 20, 0.82);
 }
