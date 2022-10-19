@@ -165,6 +165,21 @@ body {
   }
 }
 
+.langUA {
+  position: relative;
+}
+
+.langUA::before {
+  content: "bla";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 55px;
+  height: 38px;
+  background-image: url("../images/language.jpg");
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
