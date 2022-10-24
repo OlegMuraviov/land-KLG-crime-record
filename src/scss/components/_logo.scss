@@ -6,12 +6,15 @@
   height: 47px;
 }
 
-.desktopLogoWrap{
-    // position: absolute;
-}
 .desktopLogo {
 display: none;
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 768px){
     display: block;
+    width: 143px;
+    height: 73px;
+}
+@media screen and (min-width: 1600px){
+  width: 224px;
+  height: 120px;
 }
 }

@@ -1,8 +1,11 @@
 .extract {
-    padding-bottom: 18px;
-    @media screen and (min-width: 1600px){
-        padding-bottom: 68px;
-    }
+  padding-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding-bottom: 70px;
+  }
 }
 
 .extractTitle {
@@ -13,30 +16,34 @@
 }
 
 .extractContent {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
 
-.extractImageWrap {
+.extractImageWrap {  
   display: block;
   margin: 0 auto;
   margin-bottom: 12px;
   border: 10px solid #372306;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
     margin-right: 60px;
     margin-bottom: 0;
+    width: 100%;
+  }
+  @media screen and (min-width: 1600px) {
     width: 678px;
     height: 543px;
     border: 19px solid #372306;
   }
 }
 
-.extractImage{
+.extractImage {
   display: block;
   margin: 0 auto;
-object-fit: cover;
+  object-fit: cover;
 }
 
 .extractDescription {
@@ -58,6 +65,14 @@ object-fit: cover;
     margin-bottom: 20px;
   }
 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 21px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     line-height: 38px;
@@ -66,4 +81,5 @@ object-fit: cover;
       margin-bottom: 40px;
     }
   }
+ 
 }

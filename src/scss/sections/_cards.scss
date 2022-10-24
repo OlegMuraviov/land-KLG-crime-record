@@ -6,8 +6,15 @@
 .cardsTitle {
   padding: 0 15px;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
   @media screen and (min-width: 1600px) {
     margin-bottom: 40px;
+    font-size: 35px;
+    line-height: 43px;
   }
 }
 
@@ -17,6 +24,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    width: 90%;
+  }
   @media screen and (min-width: 1600px) {
     justify-content: space-between;
     width: 1450px;
@@ -43,12 +54,20 @@
     margin-right: 0;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    width: 32%;
+    height: 200px;
+
     &:nth-child(odd) {
-      margin-right: 0;
+      margin-right: 0px;
     }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1600px) {
     margin-bottom: 7px;
-    width: 33%;
     height: 330px;
 
     &:nth-last-child(-n + 3) {
@@ -74,8 +93,12 @@
   &1 {
     width: 46px;
     height: 47px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 20px;
+      width: 66px;
+      height: 54px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 134px;
       height: 133px;
     }
@@ -85,8 +108,12 @@
     margin-bottom: 10px;
     width: 56px;
     height: 41px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+      width: 82px;
+      height: 46px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 159px;
       height: 117px;
     }
@@ -96,8 +123,12 @@
     margin-bottom: 11px;
     width: 47px;
     height: 46px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 20px;
+      width: 76px;
+      height: 50px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 134px;
       height: 126px;
     }
@@ -107,8 +138,12 @@
     margin-bottom: 22px;
     width: 41px;
     height: 41px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 42px;
+      width: 65px;
+      height: 52px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 133px;
       height: 130px;
     }
@@ -118,6 +153,11 @@
     margin-bottom: 11px;
     width: 42px;
     height: 43px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5px;
+      width: 72px;
+      height: 60px;
+    }
     @media screen and (min-width: 1600px) {
       margin-bottom: 5px;
       width: 144px;
@@ -128,6 +168,10 @@
   &6 {
     width: 42px;
     height: 43px;
+    @media screen and (min-width: 768px) {
+      width: 65x;
+      height: 53px;
+    }
     @media screen and (min-width: 1600px) {
       width: 128px;
       height: 136px;
@@ -138,8 +182,12 @@
     margin-bottom: 11px;
     width: 33px;
     height: 43px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 35px;
+      width: 75px;
+      height: 65px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 150px;
       height: 162px;
     }
@@ -148,6 +196,10 @@
   &8 {
     width: 47px;
     height: 44px;
+    @media screen and (min-width: 768px) {
+      width: 76px;
+      height: 53px;
+    }
     @media screen and (min-width: 1600px) {
       width: 153px;
       height: 136px;
@@ -158,8 +210,12 @@
     margin-bottom: 10px;
     width: 44px;
     height: 41px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 25px;
+      width: 81px;
+      height: 64px;
+    }
+    @media screen and (min-width: 1600px) {
       width: 158px;
       height: 163px;
     }
@@ -172,36 +228,40 @@
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     line-height: 38px;
 
-    &-guardianship {
-      width: 386px;
-    }
-    &-visa {
-      width: 394px;
-    }
-    &-translation {
-      width: 397px;
-    }
-    &-breafcase {
-      width: 377px;
-    }
-    &-weapon {
-      width: 386px;
-    }
-    &-paycard {
-      width: 387px;
-    }
-    &-passport {
-      width: 386px;
-    }
-    &-handsnake {
-      width: 384px;
-    }
-    &-capitoly {
-      width: 386px;
-    }
+    // &-guardianship {
+    //   width: 386px;
+    // }
+    // &-visa {
+    //   width: 394px;
+    // }
+    // &-translation {
+    //   width: 397px;
+    // }
+    // &-breafcase {
+    //   width: 377px;
+    // }
+    // &-weapon {
+    //   width: 386px;
+    // }
+    // &-paycard {
+    //   width: 387px;
+    // }
+    // &-passport {
+    //   width: 386px;
+    // }
+    // &-handsnake {
+    //   width: 384px;
+    // }
+    // &-capitoly {
+    //   width: 386px;
+    // }
   }
 }

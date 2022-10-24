@@ -1,6 +1,9 @@
 .footnoteWrap {
   padding: 20px 40px;
   background-color: var(--brand-color);
+  @media screen and (min-width: 768px){
+    padding: 20px 10%;
+  }
 
   @media screen and (min-width: 1600px) {
     padding: 20px 60px 35px 60px;
@@ -14,6 +17,10 @@
   line-height: 18px;
   text-align: center;
   color: var(--additional-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 35px;
     line-height: 43px;

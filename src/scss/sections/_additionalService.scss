@@ -1,6 +1,11 @@
 .additionalService {
   padding-bottom: 27px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
   @media screen and (min-width: 1600px) {
+    padding-top: 0;
     padding-bottom: 100px;
   }
 }
@@ -21,7 +26,11 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   @media screen and (min-width: 1600px) {
+    display: block;
     margin-bottom: 68px;
     font-size: 32px;
     line-height: 39px;
@@ -33,10 +42,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
+    align-items: stretch;
+  }
+  @media screen and (min-width: 1600px){
+    justify-content: center;
   }
 }
 
@@ -49,20 +62,22 @@
   &:first-of-type {
     margin-bottom: 23px;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 40%;
+    height: auto;
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
   @media screen and (min-width: 1600px) {
-    padding-top: 23px;
-    padding-left: 38px;
-    padding-right: 38px;
-    padding-bottom: 38px;
+    padding: 25px 40px 40px 40px;
     width: 667px;
     height: 787px;
-
+    
     &:last-child {
       padding-top: 46px;
       margin-left: 122px;
-    }
-    &:first-of-type {
-      margin-bottom: 0;
     }
   }
 }
@@ -87,6 +102,10 @@
   font-size: 15px;
   line-height: 18px;
   color: var(--additional-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 24px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     line-height: 39px;
@@ -133,6 +152,10 @@
   text-align: justify;
   color: var(--additional-text-color);
 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     line-height: 38px;
@@ -150,13 +173,16 @@
   height: 29px;
   border-radius: 20px;
   background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   @media screen and (min-width: 1600px) {
     left: 50%;
     bottom: 38px;
     transform: translateX(-50%);
     width: 350px;
     height: 85px;
-    background-color: #ffffff;
   }
 }
 
@@ -166,6 +192,10 @@
   font-size: 14px;
   line-height: 17px;
   color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 24px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     line-height: 39px;

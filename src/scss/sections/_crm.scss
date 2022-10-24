@@ -1,9 +1,14 @@
 .crmWrap {
   padding: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding: 35px 62px 68px 31px;
+  }
   @media screen and (min-width: 1600px) {
     display: flex;
     justify-content: center;
-    padding: 62px 62px 68px 31px;
+    padding: 60px 60px 70px 30px;
   }
 }
 
@@ -13,6 +18,12 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 20px;
+    line-height: 30px;
+  }
   @media screen and (min-width: 1600px) {
     width: 659px;
     font-size: 35px;
@@ -21,16 +32,22 @@
 }
 
 .crmScriptWrap {
-    @media screen and (min-width: 1600px) {
-        margin-right: 88px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-right: 88px;
+  }
 }
 
 .crmImage {
-    display: none;
-    @media screen and (min-width: 1600px){
-        display: block;
-        width: 684px;
-        height: 844px;
-    }
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 50%;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 684px;
+    height: 844px;
+  }
 }
